@@ -4,6 +4,7 @@ import Home from './pages/home';
 import Destination from './pages/destination';
 import Crew from './pages/crew';
 import Technology from './pages/technology';
+import Contacts from './pages/contacts';
 
 
 function App() {
@@ -24,6 +25,9 @@ function App() {
             <li>
               <Link to="technology">Technology</Link>
             </li>
+            <li>
+              <Link to="contacts">Contacts</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
@@ -31,6 +35,7 @@ function App() {
           <Route path="destination" element={<Destination />} />
           <Route path="crew" element={<Crew />} />
           <Route path="technology" element={<Technology />} />
+          <Route path="contacts" element={<Contacts />} />
         </Routes>
 
       </div>

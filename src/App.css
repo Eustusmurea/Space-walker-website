@@ -1,42 +1,79 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  margin: 0%;
+  padding: 0%;
+  font-family: barlow condensed, bellefair;
+  background-color: #0b0d17;
+  text-align: left;
+  color: white;
+
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  .home {
+    margin: 0%;
+    padding: 0%;
+    background-image: url('./assets/home/background-home-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    background-color: #0b0d17;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color: white;
+    text-align: left;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+  .crew {
+    background-image: url('./assets/crew/background-crew-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color: white;
+    text-align: left;
 }
 
-.card {
-  padding: 2em;
+  .destination {
+    background-image: url('./assets/destination/background-destination-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color: white;
+    text-align: left;
 }
 
-.read-the-docs {
-  color: #888;
+.technology {
+    background-image: url('./assets/technology/background-technology-desktop.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    color: white;
+    text-align: left;
+}
+
+.contacts {
+  background-image: url('./assets/home/background-home-desktop.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  color: white;
+  text-align: left;
 }

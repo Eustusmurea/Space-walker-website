@@ -2,7 +2,7 @@ import React from 'react';
 
 const Crew = () => {
     return(
-        <div>
+        <div className='crew'>
             <h1>Crew page</h1>
             <p>Welcome to the crew page</p>
         </div>
