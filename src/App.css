@@ -5,11 +5,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-body {
+html, body {
+  width: 100%;
+  height: auto;
   margin: 0%;
   padding: 0%;
-  font-family: barlow condensed, bellefair;
+  font-family: barlow regular;
   background-color: #0b0d17;
+  font-size: 18px -180%;
   text-align: left;
   color: white;
 
@@ -76,4 +79,70 @@ body {
   justify-content: left;
   color: white;
   text-align: left;
+}
+
+.xl {
+  font-family: Bellefair Regular;
+  font-size: 144px - 171.9%;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+
+.l {
+  font-family: Bellefair Regular;
+  font-size: 100px - 114.6%;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+
+.m{
+  font-family: Bellefair Regular;
+  font-size: 56px - 64.2%;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+.s {
+  font-family: Bellefair Regular;
+  font-size: 32px - 36.8%;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+
+.xs {
+  font-family: Bellefair Regular;
+  font-size: 28px - 33.6%;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+.subl {
+  font-family: Bellefair Regular;
+  font-size: 28px - 32.1%;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+
+.subm {
+  font-family: Bellefair Regular;
+  font-size: 16px - 16.8%;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+
+.navtext {
+  font-family: Barlow Condensed Regular;
+  font-size: 16px - 19.2%;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+
+.bodytext {
+  font-family: Barlow  Regular;
+  font-size: 18px - 180.2%;
+  letter-spacing: 0px;
+  line-height: normal;
+}
+.textcontainer {
+  width: 50%;
+  padding: 0%;
+  margin: 0%;
 }

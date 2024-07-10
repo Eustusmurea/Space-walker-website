@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../App.css';
 const Technology = () => {
     return(
         <div className='technology'>

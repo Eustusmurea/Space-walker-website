@@ -1,5 +1,5 @@
 import React from 'react';
-
+import '../App.css';
 const Crew = () => {
     return(
         <div className='crew'>
