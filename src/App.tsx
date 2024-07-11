@@ -5,31 +5,15 @@ import Destination from './pages/destination';
 import Crew from './pages/crew';
 import Technology from './pages/technology';
 import Contacts from './pages/contacts';
+import './App.css';
+import Navbar from './components/ui/navbar';
 
 
 function App() {
   return (
     <Router>
       <div>
-        <nav>
-          <ul>
-            <li>
-              <Link to="/">Home</Link>
-            </li>
-            <li>
-              <Link to="destination">Destination</Link>
-            </li>
-            <li>
-              <Link to="crew">Crew</Link>
-            </li>
-            <li>
-              <Link to="technology">Technology</Link>
-            </li>
-            <li>
-              <Link to="contacts">Contacts</Link>
-            </li>
-          </ul>
-        </nav>
+        <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="destination" element={<Destination />} />
