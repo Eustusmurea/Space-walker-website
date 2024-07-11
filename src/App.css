@@ -1,144 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  font-family: 'Barlow Condensed', 'Bellefair', sans-serif;
-  background-color: black;
-   text-align: left;
-  color: white;
+.home {
+background-color: #1e1e1e;
+background-image: url(./assets/home/background-home-desktop.jpg) ;
+mix-blend-mode: screen;
+background-attachment: fixed;
+background-size: cover;
+background-position: center;
+width: 100vw;
+width: 3359px;
+height: 1538px;
+left: 1022px;
+top: 2079px;
 }
 
-  .home {
-    margin: 0%;
-    padding: 0%;
-    background-image: url('./assets/home/background-home-desktop.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    color: white;
-    text-align: left;
-  }
-
-  .crew {
-    background-image: url('./assets/crew/background-crew-desktop.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    color: white;
-    text-align: left;
+.heading-xs {
+width: 540px;
+height: 165px;
+font-family: 'Bellefair';
+font-style: normal;
+font-weight: 400;
+font-size: 144px;
+line-height: 165px;
+color: #FFFFFF;
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
 }
 
-  .destination {
-    background-image: url('./assets/destination/background-destination-desktop.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    color: white;
-    text-align: left;
+.body-xs {
+font-family: 'Barlow';
+font-style: normal;
+font-weight: 400;
+font-size: 24px;
+line-height: 34px;
+color: #FFFFFF;
+flex: none;
+order: 2;
+align-self: stretch;
+flex-grow: 0;
+}
+.heading {
+
+font-family: 'Barlow Condensed';
+font-style: normal;
+font-weight: 400;
+font-size: 28px;
+line-height: 34px;
+letter-spacing: 4px;
+color: #D0D6F9;
+flex: none;
+order: 0;
+align-self: stretch;
+flex-grow: 0;
+
 }
 
-.technology {
-    background-image: url('./assets/technology/background-technology-desktop.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    color: white;
-    text-align: left;
+.hero {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+justify-content: flex-end;
+padding: 128px 0px;
+gap: 8px;
+width: 1440px;
+height: 888px;
+order: 1;
+flex-grow: 1;
 }
 
-.contacts {
-  background-image: url('./assets/home/background-home-desktop.jpg');
-  background-size: cover;
-  background-position: center;
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  justify-content: left;
-  color: white;
-  text-align: left;
-}
+.button {
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+padding: 0px;
+gap: 24px;
 
-.xl {
-  font-family: Bellefair Regular;
-  font-size: 144px - 171.9%;
-  letter-spacing: 0px;
-  line-height: normal;
-}
-
-.l {
-  font-family: Bellefair Regular;
-  font-size: 100px - 114.6%;
-  letter-spacing: 0px;
-  line-height: normal;
-}
-
-.m{
-  font-family: Bellefair Regular;
-  font-size: 56px - 64.2%;
-  letter-spacing: 0px;
-  line-height: normal;
-}
-.s {
-  font-family: Bellefair Regular;
-  font-size: 32px - 36.8%;
-  letter-spacing: 0px;
-  line-height: normal;
-}
-
-.xs {
-  font-family: Bellefair Regular;
-  font-size: 28px - 33.6%;
-  letter-spacing: 0px;
-  line-height: normal;
-}
-.subl {
-  font-family: Bellefair Regular;
-  font-size: 28px - 32.1%;
-  letter-spacing: 0px;
-  line-height: normal;
-}
-
-.subm {
-  font-family: Bellefair Regular;
-  font-size: 16px - 16.8%;
-  letter-spacing: 0px;
-  line-height: normal;
-}
-
-.navtext {
-  font-family: Barlow Condensed Regular;
-  font-size: 16px - 19.2%;
-  letter-spacing: 0px;
-  line-height: normal;
-}
-
-.bodytext {
-  font-family: Barlow  Regular;
-  font-size: 18px - 180.2%;
-  letter-spacing: 0px;
-  line-height: normal;
-}
-.textcontainer {
-  width: 50%;
-  padding: 0%;
-  margin: 0%;
+margin: 0 auto;
+width: 540px;
+max-width: 540px;
+height: 272px;
+flex: none;
+order: 1;
+flex-grow: 1;
 }

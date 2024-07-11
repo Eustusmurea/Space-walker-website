@@ -5,6 +5,7 @@ import Destination from './pages/destination';
 import Crew from './pages/crew';
 import Technology from './pages/technology';
 import Contacts from './pages/contacts';
+import './App.css';
 
 
 function App() {
