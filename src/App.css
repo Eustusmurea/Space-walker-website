@@ -92,3 +92,30 @@ flex: none;
 order: 1;
 flex-grow: 1;
 }
+
+.navbar {
+box-sizing: border-box;
+overflow: hidden;
+background-color: #0B0917;
+position:relative ;
+font-family: barlow condensed;
+font-size: 20px;
+line-height: normal;
+letter-spacing: 2px;
+z-index: 10;
+width: 100%;
+border-radius: 5px;
+}
+
+.navbar a{
+float: right;
+display: block;
+color: #FFFFFF;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: grey
+}

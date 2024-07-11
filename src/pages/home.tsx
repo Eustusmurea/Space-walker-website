@@ -1,5 +1,6 @@
 import React from 'react';
 import '../App.css';
+import { Button } from '../components/ui/button';
 
 
 const Home = () => {
@@ -17,6 +18,7 @@ const Home = () => {
         to outer space and not hover kind of on the edge of it. Well sit back, <br />
         and relax because we'll give you a truly out of this world experience!
       </p>
+      <Button variant="default"> Explore</Button>
       </div>
     </div>    
   );
