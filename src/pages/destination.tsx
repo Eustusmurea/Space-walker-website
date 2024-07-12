@@ -5,6 +5,7 @@ import Mars from './Mars';
 import Europa from './europa';
 import Titan from './titan';
 import '../App.css';
+import NavDestination from '../components/ui/navdestination';
 
 const Destination = () => {
   return (
@@ -13,6 +14,9 @@ const Destination = () => {
         <div className='content'>
           <h1 className='body-xs'>01 PICK YOUR DESTINATION</h1>
           <div className='destination-heading'>
+            <div className='navdestination'>
+              <NavDestination /> 
+            </div>
             <Routes>
               <Route path="moon" element={<Moon />} />
               <Route path="mars" element={<Mars />} />
@@ -25,6 +29,6 @@ const Destination = () => {
       </div>
     </div>
   );
-}
+};
 
 export default Destination;
