@@ -156,7 +156,13 @@ text-decoration: none;
   float: center
 
 }
-
-.content {
-  
+.navbar-list li a {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 10px;
 }
+
+.navbar-list li a.active {
+  border-bottom: 2px solid #ffffff;
+}
+
