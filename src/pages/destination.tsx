@@ -7,9 +7,6 @@ const Destination = () => {
         <div className='main-content'>
             <div className='content'>
                 <h1 className='body-xs'>O1 PICK YOUR DESTINATION</h1>
-                <div className='image'>
-                    <img src='Space-walker-website\src\assets\destination\image-moon.png'>
-                    </img>
                     <div className='destination-heading'>
                     <nav>
                         <ul className='navbar-list'>
@@ -32,7 +29,6 @@ const Destination = () => {
 
                 </div>
             </div>
-        </div>
         </div>
     );
 };

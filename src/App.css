@@ -148,9 +148,15 @@ text-decoration: none;
   text-align: center;
   justify-content: center;
   padding: 14px 16px;
+  margin: 0;
+  display: flex;
   }
 
 .destination-heading b {
   float: center
 
+}
+
+.content {
+  
 }
