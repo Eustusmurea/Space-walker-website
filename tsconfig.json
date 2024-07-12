@@ -9,6 +9,9 @@
     }
   ],
   "compilerOptions": {
+    "target": "es5",
+    "lib": ["DOM", "ES2017"],
+    "jsx": "react",
     "baseUrl": ".",
     "paths": {
       "@/*": [
