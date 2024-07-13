@@ -153,6 +153,8 @@ text-decoration: none;
   padding: 14px 16px;
   margin: 0;
   display: flex;
+  flex-direction:column;
+  align-items: center;
   }
 
  .ul {
