@@ -8,7 +8,7 @@
 @tailwind utilities;
 
 .home {
-background-color: #1e1e1e;
+/* background-color: #1e1e1e; */
 background-image: url(./assets/home/background-home-desktop.jpg) ;
 mix-blend-mode: screen;
 background-attachment: fixed;
@@ -96,7 +96,7 @@ flex-grow: 1;
 .navbar {
 box-sizing: border-box;
 overflow: hidden;
-background-color: #0B0917;
+background-color: tran;
 position:relative ;
 font-family: barlow condensed;
 font-size: 20px;
@@ -104,16 +104,19 @@ line-height: normal;
 letter-spacing: 2px;
 z-index: 10;
 width: 100%;
-border-radius: 5px;
+border-radius: 0px;
+margin-left: 75%;
+
 }
 
 .navbar a{
-float: right;
+float:left;
 display: block;
-color: #FFFFFF;
+color:black;
 text-align: center;
 padding: 14px 16px;
 text-decoration: none;
+
 }
 
 .navbar a:hover {
@@ -150,19 +153,38 @@ text-decoration: none;
   padding: 14px 16px;
   margin: 0;
   display: flex;
+  flex-direction:column;
+  align-items: center;
   }
 
-.destination-heading b {
-  float: center
+ .ul {
+  list-style: none;
+  margin:0;
+  padding: 0;
+  background-color: transparent;
+  display:inline;
+  position: fixed;
+  overflow: hidden;
+  padding: 8px;
+  width: 60px;
 
-}
-.navbar-list li a {
+  }
+  
+  .li{
+  float: left;
+  }
+
+  .li a {
+  display: block;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 14px 16px;
   text-decoration: none;
-  color: #ffffff;
-  padding: 10px;
-}
+  }
+  .li a:hover {
+    background-color: grey
+  }
+.active {
+  background-color:grey;
 
-.navbar-list li a.active {
-  border-bottom: 2px solid #ffffff;
 }
-
