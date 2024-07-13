@@ -125,66 +125,102 @@ text-decoration: none;
 
 .destination {
   background-color: #1e1e1e;
-  background-image: url(./assets/destination/background-destination-desktop.jpg) ;
+  background-image: url('./assets/destination/background-destination-desktop.jpg');
   mix-blend-mode: screen;
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   width: 100vw;
-  width: 3359px;
-  height: 1538px;
-  left: 1022px;
- top: 2079px;
+  height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.content {
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .destination-heading {
-  overflow: hidden;
-  background-color:transparent;
-  position:relative ;
-  font-family: barlow condensed;
-  font-size: 20px;
-  color: #FFFFFF;
-  line-height: normal;
-  letter-spacing: 2px;
-  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
   border-radius: 5px;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
   text-align: center;
+}
+
+.left-container {
+  flex: 1;
+}
+
+.image-container {
+  display: flex;
   justify-content: center;
-  padding: 14px 16px;
+  align-items: center;
+}
+
+.destination-image {
+  width: 80%;
+  max-width: 300px;
+  border-radius: 5px;
+}
+
+.navdestination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+.section-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.routes-container {
+  flex: 2;
+  padding: 20px;
+}
+
+.ul {
+  list-style: none;
+  padding: 0;
   margin: 0;
   display: flex;
-  flex-direction:column;
-  align-items: center;
-  }
+}
 
- .ul {
-  list-style: none;
-  margin:0;
-  padding: 0;
-  background-color: transparent;
-  display:inline;
-  position: fixed;
-  overflow: hidden;
-  padding: 8px;
-  width: 60px;
+.li {
+  margin-right: 20px;
+}
 
-  }
-  
-  .li{
-  float: left;
-  }
-
-  .li a {
-  display: block;
-  color: #FFFFFF;
-  text-align: center;
-  padding: 14px 16px;
+.li a {
+  color: #ffffff;
   text-decoration: none;
-  }
-  .li a:hover {
-    background-color: grey
-  }
-.active {
-  background-color:grey;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
 
+.li a:hover {
+  background-color: grey;
+  border-radius: 5px;
+}
+
+.active {
+  background-color: grey;
+  border-radius: 5px;
 }
