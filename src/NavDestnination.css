@@ -1,7 +1,10 @@
 .secondary-nav {
     display: flex;
-    gap: 1.5rem;
+    gap: 32px;
     color: #b0b0b0;
+    font-family: 'Barlow condensed regular';
+    font-size: 28px;
+    letter-spacing: 4px;
   }
   
   .secondary-nav .inactive {

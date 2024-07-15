@@ -3,7 +3,7 @@
     background-color: #1e1e1e;
     padding: 10px 20px;
     font-family: 'barlow condensed';
-    font-size:32px;
+    margin-right: 64px;
   }
   
   .header {
@@ -33,9 +33,10 @@
   }
   
   .navbar-list li a {
+    font-family: 'barlow condensed';
     color: #fff;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 20px;
   }
   
   .navbar-list li a:hover {
