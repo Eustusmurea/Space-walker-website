@@ -83,16 +83,16 @@ body {
   padding: 50px;
 }
 
-.top-left {
+/* .top-left {
   position: relative;
   top: 100px;
   left: 20px;
-}
+} */
 .container {
   display: block;
   max-width: 1200px;
   padding: 2rem;
-  /* margin-bottom: 48px; */
+  margin-bottom: 48px;
   margin-left: 165px;
   margin-top: 136px;
 }
@@ -129,9 +129,11 @@ body {
 
 .image-container {
   height: auto;
-  width: 535px;
+  width: auto;
   display: flex;
   justify-content: center;
+  position: relative;
+  margin-left: 0%;
 }
 
 .destination-image {
