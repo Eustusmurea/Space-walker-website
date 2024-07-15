@@ -7,8 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Barlow', 'Bellefair';
+  height: 1024px;
+}
 .home {
-/* background-color: #1e1e1e; */
+background-color: #1e1e1e;
 background-image: url(./assets/home/background-home-desktop.jpg) ;
 mix-blend-mode: screen;
 background-attachment: fixed;
@@ -93,134 +97,169 @@ order: 1;
 flex-grow: 1;
 }
 
-.navbar {
-box-sizing: border-box;
-overflow: hidden;
-background-color: tran;
-position:relative ;
-font-family: barlow condensed;
-font-size: 20px;
-line-height: normal;
-letter-spacing: 2px;
-z-index: 10;
-width: 100%;
-border-radius: 0px;
-margin-left: 75%;
 
-}
-
-.navbar a{
-float:left;
-display: block;
-color:black;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-
-}
-
-.navbar a:hover {
-  background-color: grey
-}
-
-.destination {
-  background-color: #1e1e1e;
-  background-image: url('./assets/destination/background-destination-desktop.jpg');
-  mix-blend-mode: screen;
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  width: 100vw;
+.destination-page {
+  background: url('./assets/destination/background-destination-desktop.jpg');
   height: 100vh;
-  position: relative;
-}
-
-.main-content {
-  display: flex;
+  color: white;
+  background-repeat:inherit;
+  display:block;
   justify-content: center;
   align-items: center;
-  height: 100%;
+  padding: 50px;
+}
+
+.top-left{
+  position: absolute;
+  top: 100px;
+  left: 20px;
+
+}
+.container {
+  display: block;
+  max-width: 1200px;
+  padding: 2rem;
+  margin-bottom: 48px;
+  margin-left: 165px;
+  margin-top: 136px;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 300;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  justify-content: center;
+  margin-top: 0%;
+  font-family:'Barlow Condensed';
+  font-size: 28px;
+  margin-left: 165px;
+}
+
+.title-number {
+  font-family:'Barlow condensed';
+  font-weight: bold;
+  color: grey;
+  font-size: 1.5rem;
+  margin-right: 10px;
 }
 
 .content {
-  width: 100%;
-  max-width: 1200px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
-.destination-heading {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border-radius: 5px;
-  font-family: 'Barlow Condensed', sans-serif;
-  font-size: 20px;
-  color: #ffffff;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.left-container {
-  flex: 1;
+  align-items:flex-start;
 }
 
 .image-container {
+  height: 734px;
+  width: 535px;
+  flex: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .destination-image {
-  width: 80%;
-  max-width: 300px;
-  border-radius: 5px;
+  max-width: 100%;
+  height: auto;
 }
 
-.navdestination {
+.text-content {
+  margin-top: 48px;
+  margin-left: 156px;
+  margin-right: 50px;
+  margin-bottom: 48px;
+  flex: 1;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border-radius: 5px;
+  padding-left: 2rem;
+
+
 }
-.section-content {
+
+.secondary-nav {
+  margin-bottom: 2rem;
+  color: #b0b0b0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  width: 100%;
+}
+
+.secondary-nav .inactive {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.secondary-nav .inactive:hover {
+  color: white;
+  border-bottom: 2px solid white;
+}
+
+.secondary-nav .active {
+  color: white;
+  border-bottom: 2px solid white;
+  text-decoration: none;
 }
 
 .routes-container {
-  flex: 2;
-  padding: 20px;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
 }
 
-.ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+
+.planet-name {
+  font-family: 'Bellefair';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 114px;
+
+}
+
+.description {
+  margin-top: 16px;
+  color: #b0b0b0;
+  margin-bottom: 40px;
+  font-family: 'Barlow Regular';
+  font-style: normal;
+  font-size: 18px;
+}
+
+.stats {
+  margin-top: 41px;
   display: flex;
+  justify-content: space-between;
 }
 
-.li {
-  margin-right: 20px;
+.stat-item {
+  flex: 1;
 }
 
-.li a {
-  color: #ffffff;
-  text-decoration: none;
-  padding: 10px;
-  transition: all 0.3s ease;
+.stat-title {
+  font-family: 'Barlow condensed Regular';
+  margin-top: 1rem;
+  font-size: 16px;
+  color: #7a7a7a;
 }
 
-.li a:hover {
-  background-color: grey;
-  border-radius: 5px;
+.stat-value {
+  font-size: 28px;
+  font-family: 'Bellefair Regular';
 }
 
-.active {
-  background-color: grey;
-  border-radius: 5px;
+.crew-page {
+  background: url('./assets/crew/background-crew-desktop.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }

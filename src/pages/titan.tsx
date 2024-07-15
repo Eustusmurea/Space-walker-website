@@ -2,23 +2,27 @@ import React from 'react'
 
 const Titan = () => {
   return (
-    <div>
       <div>
-        <h1> TITAN</h1>
-        <p>
+        <h1 className='planet-name'> TITAN</h1>
+        <p className='description'>
         The only moon known to have a dense atmosphere other, <br />
         than Earth, Titan is a home away from home(just a few <br />
         hundred degrees colder!). As a bonus, you can get striking <br />
         views of the rings of Saturn.
 
         </p>
-        <div>
-          <h1>AVG. DISTANCE</h1>
-          <p>1,426,000 KM</p>
+        <hr className='divider' />
+        <div className='stats'>
+          <div className='stat-item'>
+            <h3 className='stat-title'>AVG. DISTANCE</h3>
+            <p className='stat-value'>1,426,000 KM</p>
+        </div>
+        <div className='stat-item'>
+            <h3 className='stat-title'>EST. TRAVEL TIME</h3>
+            <p className='stat-value'>6 YEARS</p>
 
-          <h1>EST. TRAVEL TIME</h1>
-          <p>6 YEARS</p>
           </div> 
+
       </div>
     </div>
   )

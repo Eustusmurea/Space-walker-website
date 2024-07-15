@@ -5,21 +5,25 @@ const Europa = () => {
   return (
     <div>
         <div>
-           <h1>EUROPA</h1>
-              <p>Europa is the smallest of the four Galilean moons orbiting Jupiter, <br />
+           <h1 className='planet-name'>EUROPA</h1>
+              <p className='description'>Europa is the smallest of the four Galilean moons orbiting Jupiter, <br />
               Europa is a winter lover's dream. With an icy surface its <br />
               perfect for a bit of ice skating, curling, hockey or simple <br />
               relaxation in your snug wintery cabin.
                 </p>
-                <div>
-                    <h1>AVG. DISTANCE</h1>
-                    <p>628 MIL KM</p>
+                <hr className='divider' />
+                <div className='stats'>
+                  <div className='stat-item'>
+                    <h3 className='stat-title'>AVG. DISTANCE</h3>
+                    <p className='stat-value'>628 MIL KM</p>
+                </div>
+                <div className='stat-item'>
 
-                    <h1>EST. TRAVEL TIME</h1>
-                    <p>3 YEARS</p>
+                 <h3 className='stat-title'>EST. TRAVEL TIME</h3>
+                 <p className='stat-value'>3 YEARS</p>
                 </div>
          </div>
-      
+      </div>
     </div>
   )
 }

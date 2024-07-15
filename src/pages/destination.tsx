@@ -42,29 +42,30 @@ const Destination = () => {
   }, [location]);
 
   return (
-    <div className='destination'>
-      <div className='main-content'>
+    <div className='destination-page'>
+      <div>
+      <h1 className="title">
+          <span className="title-number">01</span> PICK YOUR DESTINATION
+        </h1>
+      </div>
+      <div className="container">
         <div className='content'>
-          <h1 className='body-xs'>01 PICK YOUR DESTINATION</h1>
-          <div className='destination-heading'>
-            <div className='left-container'>
-              <div className='image-container'>
-                <img src={imageSrc} alt="destination" className="destination-image" />
-              </div>
-            </div>
-            <div className='navdestination'>
+          <div className='image-container'>
+            <img src={imageSrc} alt="destination" className="destination-image" />
+          </div>
+          <div className='text-content'>
+            <div className='secondary-nav'>
               <NavDestination />
             </div>
-            <div className='section-content'></div>
-          </div>
-          <div className='routes-container'>
-            <Routes>
-              <Route path="moon" element={<Moon />} />
-              <Route path="mars" element={<Mars />} />
-              <Route path="europa" element={<Europa />} />
-              <Route path="titan" element={<Titan />} />
-              <Route path="/" element={<Moon />} />
-            </Routes>
+            <div className='routes-container'>
+              <Routes>
+                <Route path="moon" element={<Moon />} />
+                <Route path="mars" element={<Mars />} />
+                <Route path="europa" element={<Europa />} />
+                <Route path="titan" element={<Titan />} />
+                <Route path="/" element={<Moon />} />
+              </Routes>
+            </div>
           </div>
         </div>
       </div>
@@ -73,4 +74,5 @@ const Destination = () => {
 };
 
 export default Destination;
+
 
