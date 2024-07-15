@@ -1,5 +1,7 @@
 import React from "react";
 import "../App.css";
+import "./../components/ui/button";
+import Button from "./../components/ui/button";
 
 const Home = () => {
   return (
@@ -18,7 +20,7 @@ const Home = () => {
         </p>
       </div>
       <div>
-        <button className="button"> Explore</button>
+        <Button />
       </div>
     </div>
   );
