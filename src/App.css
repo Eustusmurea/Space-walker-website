@@ -251,3 +251,15 @@ flex-grow: 1;
   font-size: 28px;
   font-family: 'Bellefair Regular';
 }
+
+.crew-page {
+  background: url('./assets/crew/background-crew-desktop.jpg');
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display:block;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+}

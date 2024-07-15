@@ -43,12 +43,12 @@ const Destination = () => {
 
   return (
     <div className='destination-page'>
-      <div className='top-left'>
+      <div>
       <h1 className="title">
           <span className="title-number">01</span> PICK YOUR DESTINATION
         </h1>
       </div>
-       <div className="container">
+      <div className="container">
         <div className='content'>
           <div className='image-container'>
             <img src={imageSrc} alt="destination" className="destination-image" />
