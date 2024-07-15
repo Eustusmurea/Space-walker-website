@@ -9,7 +9,7 @@
 
 body {
   font-family: 'Barlow', 'Bellefair';
-  height: 1024px;
+  height:auto;
 }
 .home {
 background-color: #1e1e1e;
@@ -18,11 +18,6 @@ mix-blend-mode: screen;
 background-attachment: fixed;
 background-size: cover;
 background-position: center;
-width: 100vw;
-width: 100%;
-height: 1400px;
-left: 1022px;
-top: 2079px;
 }
 
 .heading-xs {
@@ -100,7 +95,6 @@ flex-grow: 1;
 
 .destination-page {
   background: url('./assets/destination/background-destination-desktop.jpg');
-  height: 100vh;
   color: white;
   background-repeat:inherit;
   display:block;
@@ -110,7 +104,7 @@ flex-grow: 1;
 }
 
 .top-left{
-  position: absolute;
+  position: relative;
   top: 100px;
   left: 20px;
 
@@ -119,7 +113,7 @@ flex-grow: 1;
   display: block;
   max-width: 1200px;
   padding: 2rem;
-  margin-bottom: 48px;
+  /* margin-bottom: 48px; */
   margin-left: 165px;
   margin-top: 136px;
 }
@@ -136,7 +130,7 @@ flex-grow: 1;
   margin-top: 0%;
   font-family:'Barlow Condensed';
   font-size: 28px;
-  margin-left: 165px;
+  margin-left: -55%;
 }
 
 .title-number {
@@ -155,9 +149,8 @@ flex-grow: 1;
 }
 
 .image-container {
-  height: 734px;
+  height:auto;
   width: 535px;
-  flex: 1;
   display: flex;
   justify-content: center;
 }
@@ -254,7 +247,6 @@ flex-grow: 1;
 
 .crew-page {
   background: url('./assets/crew/background-crew-desktop.jpg');
-  height: 100vh;
   background-position: center;
   background-size: cover;
   color: white;
@@ -262,4 +254,23 @@ flex-grow: 1;
   justify-content: center;
   align-items: center;
   padding: 50px;
+}
+
+.dot-nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  border-radius: 50%;
+  background-color: gray;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: black;
 }
