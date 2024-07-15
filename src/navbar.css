@@ -1,0 +1,44 @@
+.container1 {
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    font-family: 'barlow condensed';
+    font-size:32px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+  }
+  
+  .navbar-list {
+    list-style-type: none;
+    border-spacing: 48px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-list li {
+    margin-right: 20px;
+  }
+  
+  .navbar-list li:last-child {
+    margin-right: 0;
+  }
+  
+  .navbar-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  .navbar-list li a:hover {
+    text-decoration: underline;
+  }
+  

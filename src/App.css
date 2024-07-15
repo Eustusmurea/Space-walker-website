@@ -7,8 +7,12 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  font-family: 'Barlow', sans-serif;
+  height: 1024px;
+}
 .home {
-/* background-color: #1e1e1e; */
+background-color: #1e1e1e;
 background-image: url(./assets/home/background-home-desktop.jpg) ;
 mix-blend-mode: screen;
 background-attachment: fixed;
@@ -93,45 +97,23 @@ order: 1;
 flex-grow: 1;
 }
 
-.navbar {
-box-sizing: border-box;
-overflow: hidden;
-background-color: tran;
-position:relative ;
-font-family: barlow condensed;
-font-size: 20px;
-line-height: normal;
-letter-spacing: 2px;
-z-index: 10;
-width: 100%;
-border-radius: 0px;
-margin-left: 75%;
-
-}
-
-.navbar a{
-float:left;
-display: block;
-color:black;
-text-align: center;
-padding: 14px 16px;
-text-decoration: none;
-
-}
-
-.navbar a:hover {
-  background-color: grey
-}
 
 .destination-page {
-  background: url('./assets/destination/background-destination-desktop.jpg') no-repeat center center/cover;
+  background: url('./assets/destination/background-destination-desktop.jpg');
   height: 100vh;
   color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 50px;
 }
 
+.top-left{
+  position: absolute;
+  top: 100px;
+  left: 20px;
+
+}
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -141,23 +123,31 @@ text-decoration: none;
 .title {
   font-size: 2rem;
   font-weight: 300;
-  color: #b0b0b0;
+  color: white;
   display: flex;
   align-items: center;
   gap: 1rem;
   text-align: center;
   justify-content: center;
+  margin-top: 0%;
+  margin-bottom: 20px;
+  font-family:'Barlow Condensed';
+  font-size: 28px;
 }
 
 .title-number {
-  color: white;
+  font-family:'Barlow condensed';
+  font-weight: bold;
+  color: grey;
   font-size: 1.5rem;
+  margin-right: 10px;
 }
 
 .content {
   display: flex;
-  gap: 2rem;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:flex-start;
 }
 
 .image-container {
@@ -219,12 +209,12 @@ text-decoration: none;
 .description {
   margin-top: 1rem;
   color: #b0b0b0;
+  margin-bottom: 2rem;
 }
 
 .stats {
   display: flex;
-  gap: 2rem;
-  margin-top: 2rem;
+  justify-content: space-between;
 }
 
 .stat-item {
@@ -232,14 +222,11 @@ text-decoration: none;
 }
 
 .stat-title {
+  margin-top: 1rem;
   font-size: 0.875rem;
   color: #7a7a7a;
 }
 
 .stat-value {
   font-size: 1.5rem;
-}
-
-.routes-container {
-  margin-top: 1rem;
 }

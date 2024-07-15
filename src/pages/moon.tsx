@@ -11,6 +11,7 @@ const Moon = () => {
         back refreshed. While you're there, take in some history <br />
         by visiting the Luna and Apollo 11 landing sites.
         </p>
+        <hr className='divider' />
         <div className='stats'>
           <div className='stat-item'>
             <h3 className='stat-title'>AVG. DISTANCE</h3>
