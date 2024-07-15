@@ -4,8 +4,11 @@ import '../../App.css'
 
 const Navbar = () => {
   return (
-    <div className='navbar'>
-      <nav>
+    <div className='container'>
+      <header className='header'>
+        <div className='logo'>Logo </div>
+
+      <nav className='nav'>
           <ul className='navbar-list'>
             <li>
               <Link to="/">01 Home</Link>
@@ -24,6 +27,7 @@ const Navbar = () => {
             </li>
           </ul>
         </nav>
+      </header>
     </div>
   )
 }
