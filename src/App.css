@@ -250,7 +250,7 @@ flex-grow: 1;
   background-position: center;
   background-size: cover;
   color: white;
-  display:block;
+  display:inline-flexbox;
   justify-content: center;
   align-items: center;
   padding: 50px;
@@ -273,4 +273,24 @@ flex-grow: 1;
 
 .dot.active {
   background-color: black;
+}
+
+.crew-image-element{
+  position: absolute;
+  width: 539.28px;
+  height: 676px;
+  left: 68%;
+  top: 29px;
+}
+
+.main-content {
+  margin-top: 48px;
+  margin-left: 156px;
+  margin-right: 50px;
+  margin-bottom: 48px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 2rem;
 }

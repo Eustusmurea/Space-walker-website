@@ -11,6 +11,7 @@ import mark from '../assets/crew/image-mark-shuttleworth.png';
 import DotNav from '../components/ui/navCrew';
 
 import '../App.css';
+import NavCrew from '../components/ui/navCrew';
 
 const Crew = () => {
     const [imageSrc, setImageSrc] = useState(douglas);
@@ -21,13 +22,13 @@ const Crew = () => {
             case 'Commander':
                 setImageSrc(douglas);
                 break;
-            case 'Mission specialist':
+            case 'Engineer':
                 setImageSrc(ansari);
                 break;
             case 'Pilot':
                 setImageSrc(victor);
                 break;
-            case 'Flight Engineer':
+            case 'Specialist':
                 setImageSrc(mark);
                 break;
             default:
@@ -43,14 +44,17 @@ const Crew = () => {
 
     return (
         <div className="crew-page">
+            <div className='page'>
+            <div className='main-content'>
             <div className="title">
                 <span className="title-number">02</span> MEET YOUR CREW
             </div>
             <div className="crew-content">
-                <div className="crew-image">
-                    <img src={imageSrc} alt="crew" className="crew-image-element" />
-                </div>
-                <div className="crew-details">
+                <div className='content'>
+                  <div className='Explanation'>
+                    <NavCrew />
+
+                     <div className="crew-details">
                     <Routes>
                         <Route path="Commander" element={<Commander />} />
                         <Route path="Mission specialist" element={<Specialist />} />
@@ -58,8 +62,14 @@ const Crew = () => {
                         <Route path="Flight Engineer" element={<Engineer />} />
                         <Route path="/" element={<Commander />} />
                     </Routes>
+                    </div>
+                  </div>
+                <div className="crew-image">
+                    <img src={imageSrc} alt="crew" className="crew-image-element" />
                 </div>
-                <DotNav />
+                </div>
+                </div>
+                </div>
             </div>
         </div>
     );
