@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Bellefair", serif;
+  background: url("background-image.jpg") no-repeat center center fixed;
+  background-size: cover;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}

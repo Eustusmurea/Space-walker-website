@@ -1,16 +1,16 @@
-import React, { useState, useEffect } from 'react';
-import { Route, Routes, useLocation } from 'react-router-dom';
-import Moon from './moon';
-import Mars from './Mars';
-import Europa from './europa';
-import Titan from './titan';
-import '../App.css';
-import NavDestination from '../components/ui/navdestination';
+import React, { useState, useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Moon from "./moon";
+import Mars from "./Mars";
+import Europa from "./europa";
+import Titan from "./titan";
+import "../App.css";
+import NavDestination from "../components/ui/navdestination";
 
-import moonImage from '../assets/destination/image-moon.png';
-import marsImage from '../assets/destination/image-mars.png';
-import europaImage from '../assets/destination/image-europa.png';
-import titanImage from '../assets/destination/image-titan.png';
+import moonImage from "../assets/destination/image-moon.png";
+import marsImage from "../assets/destination/image-mars.png";
+import europaImage from "../assets/destination/image-europa.png";
+import titanImage from "../assets/destination/image-titan.png";
 
 const Destination = () => {
   const [imageSrc, setImageSrc] = useState(moonImage);
@@ -18,16 +18,16 @@ const Destination = () => {
 
   const loadImage = (section: string) => {
     switch (section) {
-      case 'moon':
+      case "moon":
         setImageSrc(moonImage);
         break;
-      case 'mars':
+      case "mars":
         setImageSrc(marsImage);
         break;
-      case 'europa':
+      case "europa":
         setImageSrc(europaImage);
         break;
-      case 'titan':
+      case "titan":
         setImageSrc(titanImage);
         break;
       default:
@@ -37,35 +37,31 @@ const Destination = () => {
   };
 
   useEffect(() => {
-    const currentPath = location.pathname.split('/')[2];
+    const currentPath = location.pathname.split("/")[2];
     loadImage(currentPath);
   }, [location]);
 
   return (
-    <div className='destination-page'>
-      <div>
+    <div className="destination-page bg-cover">
       <h1 className="title">
-          <span className="title-number">01</span> PICK YOUR DESTINATION
-        </h1>
-      </div>
+        <span className="title-number">01</span> PICK YOUR DESTINATION
+      </h1>
       <div className="container">
-        <div className='content'>
-          <div className='image-container'>
-            <img src={imageSrc} alt="destination" className="destination-image" />
+        <div className="content">
+          <div>
+            <img src={imageSrc} alt="destination" className="dest-img" />
           </div>
-          <div className='text-content'>
-            <div className='secondary-nav'>
+          <div className="text-content main">
+            <div className="secondary-nav">
               <NavDestination />
             </div>
-            <div className='routes-container'>
-              <Routes>
-                <Route path="moon" element={<Moon />} />
-                <Route path="mars" element={<Mars />} />
-                <Route path="europa" element={<Europa />} />
-                <Route path="titan" element={<Titan />} />
-                <Route path="/" element={<Moon />} />
-              </Routes>
-            </div>
+            <Routes>
+              <Route path="moon" element={<Moon />} />
+              <Route path="mars" element={<Mars />} />
+              <Route path="europa" element={<Europa />} />
+              <Route path="titan" element={<Titan />} />
+              <Route path="/" element={<Moon />} />
+            </Routes>
           </div>
         </div>
       </div>
@@ -74,5 +70,3 @@ const Destination = () => {
 };
 
 export default Destination;
-
-

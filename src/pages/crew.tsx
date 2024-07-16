@@ -42,35 +42,29 @@ const Crew = () => {
   }, [location]);
 
   return (
-    <div className="crew-page">
-      <div className="page">
-        <div className="main-content1">
-          <div>
-            <div className="title">
-              <span className="title-number">02</span> MEET YOUR CREW
-            </div>
-            <div className="crew-content">
-              <div className="explanation">
-                <div className="crew-details">
-                  <Routes>
-                    <Route path="Commander" element={<Commander />} />
-                    <Route path="Mission specialist" element={<Specialist />} />
-                    <Route path="Pilot" element={<Pilot />} />
-                    <Route path="Flight Engineer" element={<Engineer />} />
-                    <Route path="/" element={<Commander />} />
-                  </Routes>
-                </div>
+    <div className="crew-body">
+      <div>
+        <div>
+          <div className="title">
+            <span className="title-number">02</span> MEET YOUR CREW
+          </div>
+          <div className="crew-content">
+            <div className="explanation">
+              <div className="crew-details">
+                <Routes>
+                  <Route path="Commander" element={<Commander />} />
+                  <Route path="Mission specialist" element={<Specialist />} />
+                  <Route path="Pilot" element={<Pilot />} />
+                  <Route path="Flight Engineer" element={<Engineer />} />
+                  <Route path="/" element={<Commander />} />
+                </Routes>
+              </div>
 
-                <div className="crew-image">
-                  <img
-                    src={imageSrc}
-                    alt="crew"
-                    className="crew-image-element"
-                  />
-                </div>
-                <div className="Explanation">
-                  <NavCrew />
-                </div>
+              <div className="crew-image">
+                <img src={imageSrc} alt="crew" className="crew-image-element" />
+              </div>
+              <div className="Explanation">
+                <NavCrew />
               </div>
             </div>
           </div>
