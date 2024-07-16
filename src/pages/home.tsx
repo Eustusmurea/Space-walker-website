@@ -5,7 +5,7 @@ import Button from "./../components/ui/button";
 
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home bg-cover">
       <div className="hero">
         <p className="heading">
           SO, YOU WANT TO TRAVEL TO, <br />

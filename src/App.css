@@ -76,27 +76,42 @@ body {
 .destination-page {
   background: url("./assets/destination/background-destination-desktop.jpg");
   color: white;
-  background-repeat: inherit;
-  display: block;
-  justify-content: center;
-  align-items: center;
-  padding: 50px;
+  background-repeat: no-repeat;
 }
 
-/* .top-left {
-  position: relative;
-  top: 100px;
-  left: 20px;
-} */
 .container {
-  display: block;
-  max-width: 1200px;
-  padding: 2rem;
-  margin-bottom: 48px;
+  display: flex;
+  flex-direction: row;
+  /* height: auto; */
+  /* padding: 12px; */
+  /* margin-bottom: 48px;
   margin-left: 165px;
-  margin-top: 136px;
+  margin-top: 10px; */
 }
 
+.main {
+  display: block;
+  position: static;
+  flex-direction: row;
+  align-items: center;
+  text-align: center;
+  margin-top: -50px;
+  margin-left: 360%;
+  margin-bottom: 20%;
+}
+
+.dest-img {
+  display: flexbox;
+  /* position: static; */
+  width: 50%;
+  max-width: 600px;
+  margin-bottom: 20%;
+  margin-left: 165px;
+  margin-top: -50px;
+  max-height: 600px;
+  height: 90%;
+  justify-items: flex-start;
+}
 .title {
   font-size: 2rem;
   font-weight: 300;
@@ -127,21 +142,7 @@ body {
   align-items: flex-start;
 }
 
-.image-container {
-  height: auto;
-  width: auto;
-  display: flex;
-  justify-content: center;
-  position: relative;
-  margin-left: 0%;
-}
-
-.destination-image {
-  max-width: 100%;
-  height: auto;
-}
-
-.text-content {
+/* .text-content {
   margin-top: 48px;
   margin-left: 156px;
   margin-right: 50px;
@@ -151,7 +152,7 @@ body {
   flex-direction: column;
   align-items: center;
   padding-left: 2rem;
-}
+} */
 
 .secondary-nav {
   margin-bottom: 2rem;
@@ -222,20 +223,14 @@ body {
   font-family: "Bellefair Regular";
 }
 
+/* CREW PAGE */
 .crew-page {
-  background: url("./assets/crew/background-crew-desktop.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
+  background: url("./assets/crew/background-crew-desktop.jpg") no-repeat center
+    center fixed;
   background-size: cover;
-  color: white;
-  display: inline-flexbox;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
 }
 
 .dot-nav {
@@ -248,20 +243,16 @@ body {
 }
 
 .dot {
-  width: 12px;
-  height: 12px;
-  margin: 0 5px;
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   background-color: gray;
   cursor: pointer;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  transition: background-color 0.3s ease;
 }
 
 .dot.active {
-  background-color: black;
+  background-color: white;
 }
 
 .crew-image-element {
@@ -287,18 +278,17 @@ body {
 }
 
 .crew-details {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex: 1;
+  min-width: 300px;
 }
 
 .crew-image {
-  /* margin-left: 20px; */
+  flex: 1;
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
+  min-width: 300px;
+  margin-bottom: 20px;
 }
 
 .crew-content {
@@ -306,6 +296,18 @@ body {
   flex-direction: row;
   align-items: center;
   justify-content: center;
+}
+
+.crew-image-element {
+  max-width: 400px;
+  height: auto;
+}
+
+.Explanation {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .content {
@@ -323,29 +325,23 @@ body {
   gap: 24px;
 }
 
-.explanation {
+.pagination {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 40px;
+  gap: 10px;
+  margin-top: 20px;
+}
+.pagination button {
+  background: #ffffff;
+  border: none;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
-.button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  gap: 8px;
-  width: 150px;
-  height: 150px;
-  background: #ffffff;
-  border-radius: 50%;
-}
-.button:hover {
-  background: #f0f0f0;
+.pagination button.active {
+  background: #d0d6f9;
 }
 
 /* Technology page */

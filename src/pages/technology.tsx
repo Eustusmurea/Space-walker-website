@@ -48,9 +48,9 @@ const Technology = () => {
         </div>
         <div className="content-container">
           <Routes>
-            <Route path="vehicle" element={<Vehicle />} />
-            <Route path="spaceport" element={<Spaceport />} />
-            <Route path="capsule" element={<Capsule />} />
+            <Route path="Vehicle" element={<Vehicle />} />
+            <Route path="Spaceport" element={<Spaceport />} />
+            <Route path="Capsule" element={<Capsule />} />
             <Route path="/" element={<Vehicle />} />
           </Routes>
         </div>
