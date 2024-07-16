@@ -4,11 +4,11 @@ const Capsule = () => {
   return (
     <div>
       <div>
-        <title> THE TERMINOLOGY...</title>
+        <title className="subtitle"> THE TERMINOLOGY...</title>
       </div>
       <div>
-        <p>SPACE CAPSULE</p>
-        <p>
+        <p className="section-title">SPACE CAPSULE</p>
+        <p className="description">
           A space capsule is an often-crewed spacecraft that uses a blunt-body
           reentry capsule to
           <br />

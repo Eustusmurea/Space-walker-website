@@ -4,12 +4,12 @@ const Spaceport = () => {
   return (
     <div>
       <div>
-        <title> THE TERMINOLOGY...</title>
+        <title className="subtitle"> THE TERMINOLOGY...</title>
       </div>
       <div>
-        <p>SPACEPORT</p>
-        <p>
-          A spaceport or cosmodrome is a site fortaunching (or receiving)
+        <p className="section-title">SPACEPORT</p>
+        <p className="description">
+          A spaceport or cosmodrome is a site for launching (or receiving)
           spacecraft, by analogy to the <br />
           seaport for ships or airport for aircraft. Based in the famous Cape
           Canaveral, our spaceport is <br />

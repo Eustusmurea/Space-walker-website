@@ -423,3 +423,7 @@ body {
 .description {
   color: rgb(208 214 249);
 }
+.body {
+  background-color: rgb(11 13 23);
+  color: rgb(255 255 255);
+}

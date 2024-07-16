@@ -37,13 +37,13 @@ const Technology = () => {
 
   return (
     <div className="technology-page">
-      <div className="main-content">
+      <div className="content-container">
         <div>
-          <h1 className="title">
-            <span className="title-number">01</span> PICK YOUR DESTINATION
+          <h1 className="section-title">
+            <span className="title-number">03</span> SPACE LAUNCH 101
           </h1>
         </div>
-        <div className="pagination">
+        <div className="numbered-section">
           <NavTech />
         </div>
         <div className="content-container">
@@ -54,8 +54,8 @@ const Technology = () => {
             <Route path="/" element={<Vehicle />} />
           </Routes>
         </div>
-        <div className="tech-image-container">
-          <img src={imageSrc} alt="destination" className="technology-image" />
+        <div className="tech-image-container flex-1">
+          <img src={imageSrc} alt="destination" className="w-full h-auto" />
         </div>
       </div>
     </div>
