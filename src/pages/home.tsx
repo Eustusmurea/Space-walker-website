@@ -1,8 +1,6 @@
 import React from "react";
 import "../App.css";
-import "./../components/ui/button";
 import Button from "./../components/ui/button";
-
 const Home = () => {
   return (
     <div className="home bg-cover">

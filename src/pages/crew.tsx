@@ -42,8 +42,8 @@ const Crew = () => {
   }, [location]);
 
   return (
-    <div className="crew-page">
-      <div className="page">
+    <div className="crew-body">
+      <div>
         <div>
           <div className="title">
             <span className="title-number">02</span> MEET YOUR CREW
