@@ -43,27 +43,25 @@ const Destination = () => {
 
   return (
     <div className="destination-page bg-cover">
-      <h1 className="title">
-        <span className="title-number">01</span> PICK YOUR DESTINATION
-      </h1>
-      <div className="container">
-        <div className="content">
-          <div className="dest-img">
-            <img src={imageSrc} alt="destination" className="dest-img" />
+      <div className="content">
+        <h1 className="title">
+          <span className="title-number">01</span> PICK YOUR DESTINATION
+        </h1>
+        <div className="cont-img">
+          <img src={imageSrc} alt="destination" className="dest-img" />
+        </div>
+        <div className=" text-nowrap">
+          <div className="secondary-nav">
+            <NavDestination />
           </div>
-          <div className="text-content main">
-            <div className="secondary-nav">
-              <NavDestination />
-            </div>
-            <div className="content">
-              <Routes>
-                <Route path="moon" element={<Moon />} />
-                <Route path="mars" element={<Mars />} />
-                <Route path="europa" element={<Europa />} />
-                <Route path="titan" element={<Titan />} />
-                <Route path="/" element={<Moon />} />
-              </Routes>
-            </div>
+          <div className="routes-container">
+            <Routes>
+              <Route path="moon" element={<Moon />} />
+              <Route path="mars" element={<Mars />} />
+              <Route path="europa" element={<Europa />} />
+              <Route path="titan" element={<Titan />} />
+              <Route path="/" element={<Moon />} />
+            </Routes>
           </div>
         </div>
       </div>

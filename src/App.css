@@ -106,14 +106,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-  left: 30%;
-  top: 60%;
+  position: fixed;
+  margin-left: -10%;
+  margin-top: 25%;
   transform: translate(-50%, -50%);
   width: 90%;
   max-width: 600px;
   max-height: 600px;
   height: 90%;
+}
+.cont-img {
+  margin-left: 8px;
+  margin-bottom: 48px;
+  margin-top: 242px;
+  margin-right: 736px;
+  position: fixed;
 }
 .title {
   font-size: 2rem;
@@ -143,26 +150,28 @@ body {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  margin-top: 10%;
 }
 
 .text-content {
   margin: 0 auto;
   margin-top: 28px;
   margin-bottom: 48px;
-  margin-left: 965px;
+  margin-left: 765px;
   flex: 1;
-  display: flex;
+  display: block;
   flex-direction: column;
   align-items: center;
   padding-left: 2rem;
 }
 
 .secondary-nav {
-  margin-bottom: 2rem;
   color: #b0b0b0;
   display: flex;
   justify-content: center;
   width: 100%;
+  margin-bottom: 0;
+  margin-left: 20%;
 }
 
 .secondary-nav .inactive {
@@ -183,12 +192,15 @@ body {
 }
 
 .routes-container {
-  margin-top: 1rem;
   width: 100%;
   text-align: center;
+  margin-left: 35%;
+  margin-right: 35%;
+  margin-top: -80%;
 }
 
 .planet-name {
+  margin-top: 0%;
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
