@@ -94,42 +94,36 @@ body {
 .container {
   display: flex;
   flex-direction: row;
-  height: auto;
+  width: 100%;
   padding: 12px;
-  margin-bottom: 48px;
-  margin-left: 165px;
-  margin-top: 10px;
+  margin: 10px auto 48px auto;
+  justify-content: space-between;
 }
 
 .main {
-  display: block;
-  position: static;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: -50px;
-  margin-left: 360%;
-  margin-bottom: 20%;
+  margin: 0 auto;
 }
 
-.dest-img {
+.dest-img-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: -10%;
-  margin-top: 15%;
-  transform: translate(-50%, -50%);
+  width: 100%;
+  height: auto;
+}
+
+.dest-img {
   width: 90%;
   max-width: 600px;
   max-height: 600px;
-  height: 90%;
+  height: auto;
+  margin: 0;
 }
-.cont-img {
-  margin-left: 8px;
-  margin-bottom: 48px;
-  margin-top: 242px;
-  margin-right: 736px;
-}
+
 .title {
   font-size: 2rem;
   font-weight: 300;

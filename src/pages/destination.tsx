@@ -47,7 +47,7 @@ const Destination = () => {
         <h1 className="title">
           <span className="title-number">01</span> PICK YOUR DESTINATION
         </h1>
-        <div className="cont-img">
+        <div className="dest-img-container">
           <img src={imageSrc} alt="destination" className="dest-img" />
         </div>
         <div className=" text-nowrap">
