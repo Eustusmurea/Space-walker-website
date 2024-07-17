@@ -76,19 +76,19 @@ body {
 }
 
 .destination-page {
-  background: url("./assets/destination/background-destination-desktop.jpg");
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
   color: white;
-  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  /* height: auto; */
-  /* padding: 12px; */
-  /* margin-bottom: 48px;
+  height: auto;
+  padding: 12px;
+  margin-bottom: 48px;
   margin-left: 165px;
-  margin-top: 10px; */
+  margin-top: 10px;
 }
 
 .main {
@@ -103,16 +103,17 @@ body {
 }
 
 .dest-img {
-  display: flexbox;
-  /* position: static; */
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 30%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+  width: 90%;
   max-width: 600px;
-  margin-bottom: 20%;
-  margin-left: 165px;
-  margin-top: -50px;
   max-height: 600px;
   height: 90%;
-  justify-items: flex-start;
 }
 .title {
   font-size: 2rem;

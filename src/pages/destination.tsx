@@ -48,7 +48,7 @@ const Destination = () => {
       </h1>
       <div className="container">
         <div className="content">
-          <div>
+          <div className="dest-img">
             <img src={imageSrc} alt="destination" className="dest-img" />
           </div>
           <div className="text-content main">
