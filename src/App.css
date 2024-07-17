@@ -114,6 +114,9 @@ body {
   align-items: center;
   width: 100%;
   height: auto;
+  flex: 1;
+  margin-right: 2rem;
+  margin-left: -565px;
 }
 
 .dest-img {
@@ -121,7 +124,8 @@ body {
   max-width: 600px;
   max-height: 600px;
   height: auto;
-  margin: 0;
+  margin-right: 85%;
+  margin-top: -60%;
 }
 
 .title {
@@ -133,10 +137,10 @@ body {
   gap: 1rem;
   text-align: center;
   justify-content: center;
-  margin-top: 0%;
   font-family: "Barlow Condensed";
   font-size: 28px;
-  margin-left: -65%;
+  margin-right: 80%;
+  margin-bottom: 20%;
 }
 
 .title-number {
@@ -148,23 +152,20 @@ body {
 }
 
 .content {
-  display: contents;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-top: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10% auto;
 }
 
 .text-content {
-  margin: 0 auto;
-  margin-top: 28px;
-  margin-bottom: 48px;
-  margin-left: 765px;
+  margin: 28px auto 48px auto;
   flex: 1;
   display: block;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 2rem;
+  text-align: center;
+  padding: 0 2rem;
 }
 
 .secondary-nav {
@@ -172,8 +173,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-bottom: 0;
-  margin-left: 20%;
+  margin: 0 auto;
 }
 
 .secondary-nav .inactive {
@@ -196,13 +196,11 @@ body {
 .routes-container {
   width: 100%;
   text-align: center;
-  margin-left: 35%;
-  margin-right: 35%;
-  margin-top: -80%;
+  margin: -150% auto 0 auto;
 }
 
 .planet-name {
-  margin-top: 0%;
+  margin: 0;
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
@@ -238,6 +236,11 @@ body {
 .stat-value {
   font-size: 28px;
   font-family: "Bellefair Regular";
+}
+
+.divider {
+  border: 1px solid #b0b0b0;
+  margin: 24px 0;
 }
 
 /* CREW PAGE */
