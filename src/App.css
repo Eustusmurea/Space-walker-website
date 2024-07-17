@@ -257,65 +257,43 @@ body {
   justify-content: center;
   align-items: center;
 }
-
 .crew-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.page {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.title-number {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.crew-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.page {
-  max-width: 105%;
-  width: auto;
-  height: auto;
-  padding: 0%;
-  margin: 0%;
-}
-
-.dot-nav {
+.explanation {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  top: 150px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: gray;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  padding: 16px;
   justify-content: space-between;
-}
-
-.dot.active {
-  background-color: white;
-}
-
-.crew-image-element {
-  position: absolute;
-  max-width: 100%;
-  /* width: 539.28px;
-  height: 676px; */
-  height: auto;
-  left: 68%;
-  top: 29px;
-  margin-bottom: 48px;
-}
-
-.page {
-  margin-top: 48px;
-  margin-left: 165px;
-  margin-right: 183.83px;
-  margin-bottom: 48px;
-  display: flex;
-  align-items: center;
-  padding: 48px 0px;
-  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .crew-details {
@@ -332,16 +310,10 @@ body {
   margin-bottom: 20px;
 }
 
-.crew-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .crew-image-element {
   max-width: 400px;
   height: auto;
+  border-radius: 50%;
 }
 
 .Explanation {
@@ -351,27 +323,13 @@ body {
   width: 100%;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 50px;
-}
-
-.main-content1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-}
-
 .pagination {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
+
 .pagination button {
   background: #ffffff;
   border: none;
@@ -465,4 +423,12 @@ body {
 .body {
   background-color: rgb(11 13 23);
   color: rgb(255 255 255);
+}
+
+.crew-member img {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }
