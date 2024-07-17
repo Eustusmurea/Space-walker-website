@@ -43,24 +43,32 @@ const Destination = () => {
 
   return (
     <div className="destination-page">
-      <div className="title">
-        <span className="title-number">03</span> DESTINATION
-      </div>
-      <nav className="secondary-nav">
-        <NavDestination />
-      </nav>
-      <div className="content-wrapper">
-        <div className="dest-img-container">
-          <img src={imageSrc} alt="destination" className="dest-img" />
+      <div>
+        <div className="title left-0 top-1">
+          <span className="title-number">03</span> DESTINATION
         </div>
-        <div className="routes-container">
-          <Routes>
-            <Route path="moon" element={<Moon />} />
-            <Route path="mars" element={<Mars />} />
-            <Route path="europa" element={<Europa />} />
-            <Route path="titan" element={<Titan />} />
-            <Route path="/" element={<Moon />} />
-          </Routes>
+      </div>
+      <div>
+        <nav className="secondary-nav">
+          <NavDestination />
+        </nav>
+      </div>
+      <div className="content-wrapper">
+        <div>
+          <div className="dest-img-container">
+            <img src={imageSrc} alt="destination" className="dest-img" />
+          </div>
+        </div>
+        <div>
+          <div className="routes-container">
+            <Routes>
+              <Route path="moon" element={<Moon />} />
+              <Route path="mars" element={<Mars />} />
+              <Route path="europa" element={<Europa />} />
+              <Route path="titan" element={<Titan />} />
+              <Route path="/" element={<Moon />} />
+            </Routes>
+          </div>
         </div>
       </div>
     </div>

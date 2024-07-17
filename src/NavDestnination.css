@@ -7,10 +7,10 @@
   letter-spacing: 4px;
   justify-content: center;
   align-items: center;
-  height: 5vh;
+  height: 10vh;
   position: sticky;
-  top: 10;
-  /* background-color: #1e1e1e; */
+  margin-top: 0;
+  margin-bottom: 25%;
 }
 
 .secondary-nav .inactive {
