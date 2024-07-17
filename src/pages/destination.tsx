@@ -55,13 +55,15 @@ const Destination = () => {
             <div className="secondary-nav">
               <NavDestination />
             </div>
-            <Routes>
-              <Route path="moon" element={<Moon />} />
-              <Route path="mars" element={<Mars />} />
-              <Route path="europa" element={<Europa />} />
-              <Route path="titan" element={<Titan />} />
-              <Route path="/" element={<Moon />} />
-            </Routes>
+            <div className="content">
+              <Routes>
+                <Route path="moon" element={<Moon />} />
+                <Route path="mars" element={<Mars />} />
+                <Route path="europa" element={<Europa />} />
+                <Route path="titan" element={<Titan />} />
+                <Route path="/" element={<Moon />} />
+              </Routes>
+            </div>
           </div>
         </div>
       </div>
