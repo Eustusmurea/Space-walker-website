@@ -5,7 +5,7 @@ const NavCrew = () => {
   const navigate = useNavigate();
   const location = useLocation();
 
-  const crewMembers = ["Commander", "Specialist", "Pilot", "Engineer"];
+  const crewMembers = ["Commander", "mark", "Pilot", "Engineer"];
 
   const handleNavigation = (path: string) => {
     navigate(`/crew/${path}`);

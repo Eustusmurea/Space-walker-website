@@ -15,10 +15,14 @@ body {
 .home {
   background-color: #1e1e1e;
   background-image: url(./assets/home/background-home-desktop.jpg);
-  mix-blend-mode: screen;
-  background-attachment: fixed;
+  color: white;
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading-xs {
@@ -76,44 +80,55 @@ body {
 }
 
 .destination-page {
-  background: url("./assets/destination/background-destination-desktop.jpg");
+  background-image: url("./assets/destination/background-destination-desktop.jpg");
   color: white;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: flex;
   flex-direction: row;
-  /* height: auto; */
-  /* padding: 12px; */
-  /* margin-bottom: 48px;
-  margin-left: 165px;
-  margin-top: 10px; */
+  width: 100%;
+  padding: 12px;
+  margin: 10px auto 48px auto;
+  justify-content: space-between;
 }
 
 .main {
-  display: block;
-  position: static;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: -50px;
-  margin-left: 360%;
-  margin-bottom: 20%;
+  margin: 0 auto;
+}
+
+.dest-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  flex: 1;
+  margin-right: 2rem;
+  margin-left: -565px;
+  margin-bottom: 65%;
 }
 
 .dest-img {
-  display: flexbox;
-  /* position: static; */
-  width: 50%;
+  width: 100%;
   max-width: 600px;
-  margin-bottom: 20%;
-  margin-left: 165px;
-  margin-top: -50px;
   max-height: 600px;
-  height: 90%;
-  justify-items: flex-start;
+  height: auto;
+  margin-right: 70%;
+  margin-top: -60%;
 }
+
 .title {
   font-size: 2rem;
   font-weight: 300;
@@ -123,10 +138,10 @@ body {
   gap: 1rem;
   text-align: center;
   justify-content: center;
-  margin-top: 0%;
   font-family: "Barlow Condensed";
   font-size: 28px;
-  margin-left: -55%;
+  margin-left: -90%;
+  margin-bottom: 100%;
 }
 
 .title-number {
@@ -139,29 +154,27 @@ body {
 
 .content {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10% auto;
 }
 
-/* .text-content {
-  margin-top: 48px;
-  margin-left: 156px;
-  margin-right: 50px;
-  margin-bottom: 48px;
+.text-content {
+  margin: 28px auto 48px auto;
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-left: 2rem;
-} */
+  display: block;
+  text-align: center;
+  padding: 0 2rem;
+}
 
 .secondary-nav {
-  margin-bottom: 2rem;
   color: #b0b0b0;
   display: flex;
   justify-content: center;
   width: 100%;
+  margin: 0 auto;
 }
 
 .secondary-nav .inactive {
@@ -182,12 +195,13 @@ body {
 }
 
 .routes-container {
-  margin-top: 1rem;
   width: 100%;
   text-align: center;
+  margin: -150% auto 0 auto;
 }
 
 .planet-name {
+  margin: 0;
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
@@ -225,76 +239,61 @@ body {
   font-family: "Bellefair Regular";
 }
 
+.divider {
+  border: 1px solid #b0b0b0;
+  margin: 24px 0;
+}
+
 /* CREW PAGE */
 .crew-body {
   font-family: "Bellefair", serif;
   background: url("./assets/crew/background-crew-desktop.jpg");
+  color: white;
   background-size: cover;
-  position: fixed;
-  color: #ffffff;
-  background-color: #1e1e1e;
-  margin: 0;
-  padding: 0;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.crew-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 
-.crew-page {
+.page {
+  max-width: 1200px;
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 28px;
+  letter-spacing: 4.72px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.title-number {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.crew-content {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.page {
-  max-width: 105%;
-  width: auto;
-  height: auto;
-  padding: 0%;
-  margin: 0%;
-}
-
-.dot-nav {
+.explanation {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: absolute;
-  left: 0;
-  top: 150px;
-}
-
-.dot {
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: gray;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  padding: 16px;
   justify-content: space-between;
-}
-
-.dot.active {
-  background-color: white;
-}
-
-.crew-image-element {
-  position: absolute;
-  max-width: 100%;
-  /* width: 539.28px;
-  height: 676px; */
-  height: auto;
-  left: 68%;
-  top: 29px;
-  margin-bottom: 48px;
-}
-
-.page {
-  margin-top: 48px;
-  margin-left: 165px;
-  margin-right: 183.83px;
-  margin-bottom: 48px;
-  display: flex;
-  align-items: center;
-  padding: 48px 0px;
-  gap: 8px;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .crew-details {
@@ -311,16 +310,10 @@ body {
   margin-bottom: 20px;
 }
 
-.crew-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
 .crew-image-element {
   max-width: 400px;
   height: auto;
+  border-radius: 50%;
 }
 
 .Explanation {
@@ -330,27 +323,13 @@ body {
   width: 100%;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-left: 50px;
-}
-
-.main-content1 {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-}
-
 .pagination {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin-top: 20px;
 }
+
 .pagination button {
   background: #ffffff;
   border: none;
@@ -368,12 +347,14 @@ body {
 
 .technology-page {
   background-image: url("./assets/technology/background-technology-desktop.jpg");
-  color: #ffffff;
-  background-size: cover;
-  mix-blend-mode: screen;
-  background-attachment: fixed;
+  color: white;
   background-size: cover;
   background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .tech-nav {
@@ -442,4 +423,12 @@ body {
 .body {
   background-color: rgb(11 13 23);
   color: rgb(255 255 255);
+}
+
+.crew-member img {
+  width: 50%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 50%;
+  margin-bottom: 20px;
 }

@@ -42,19 +42,25 @@ const Destination = () => {
   }, [location]);
 
   return (
-    <div className="destination-page bg-cover">
-      <h1 className="title">
-        <span className="title-number">01</span> PICK YOUR DESTINATION
-      </h1>
-      <div className="container">
-        <div className="content">
-          <div>
+    <div className="destination-page">
+      <div>
+        <div className="title left-0 top-1">
+          <span className="title-number">03</span> DESTINATION
+        </div>
+      </div>
+      <div>
+        <nav className="secondary-nav">
+          <NavDestination />
+        </nav>
+      </div>
+      <div className="content-wrapper">
+        <div>
+          <div className="dest-img-container">
             <img src={imageSrc} alt="destination" className="dest-img" />
           </div>
-          <div className="text-content main">
-            <div className="secondary-nav">
-              <NavDestination />
-            </div>
+        </div>
+        <div>
+          <div className="routes-container">
             <Routes>
               <Route path="moon" element={<Moon />} />
               <Route path="mars" element={<Mars />} />
