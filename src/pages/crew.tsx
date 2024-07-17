@@ -4,34 +4,34 @@ import Commander from "./commander";
 import Engineer from "./engineer";
 import Pilot from "./pilot";
 import Specialist from "./specialist";
-import douglas from "../assets/crew/image-douglas-hurley.png";
-import ansari from "../assets/crew/image-anousheh-ansari.png";
-import victor from "../assets/crew/image-victor-glover.png";
-import mark from "../assets/crew/image-mark-shuttleworth.png";
+import douglasImage from "../assets/crew/image-douglas-hurley.png";
+import ansariImage from "../assets/crew/image-anousheh-ansari.png";
+import victorImage from "../assets/crew/image-victor-glover.png";
+import markImage from "../assets/crew/image-mark-shuttleworth.webp";
 
 import "../App.css";
 import NavCrew from "../components/ui/navCrew";
 
 const Crew = () => {
-  const [imageSrc, setImageSrc] = useState(douglas);
+  const [imageSrc, setImageSrc] = useState(douglasImage);
   const location = useLocation();
 
   const loadImage = (section: string) => {
     switch (section) {
       case "Commander":
-        setImageSrc(douglas);
+        setImageSrc(douglasImage);
         break;
       case "Engineer":
-        setImageSrc(ansari);
+        setImageSrc(ansariImage);
         break;
       case "Pilot":
-        setImageSrc(victor);
+        setImageSrc(victorImage);
         break;
-      case "Specialist":
-        setImageSrc(mark);
+      case "mark":
+        setImageSrc(markImage);
         break;
       default:
-        setImageSrc(douglas);
+        setImageSrc(douglasImage);
         break;
     }
   };
@@ -53,9 +53,9 @@ const Crew = () => {
               <div className="crew-details">
                 <Routes>
                   <Route path="Commander" element={<Commander />} />
-                  <Route path="Mission specialist" element={<Specialist />} />
+                  <Route path="mark" element={<Specialist />} />
                   <Route path="Pilot" element={<Pilot />} />
-                  <Route path="Flight Engineer" element={<Engineer />} />
+                  <Route path="Engineer" element={<Engineer />} />
                   <Route path="/" element={<Commander />} />
                 </Routes>
               </div>
