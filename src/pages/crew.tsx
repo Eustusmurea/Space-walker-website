@@ -43,13 +43,13 @@ const Crew = () => {
 
   return (
     <div className="crew-body">
-      <div className="page-dims">
-        <div className="title title-text">
-          <span className="title-number">02</span> MEET YOUR CREW
-        </div>
-        <div className="page">
-          <div>
-            <div className="explanation">
+      <div className="page-display">
+        <div className="page-dims">
+          <div className="title title-text">
+            <span className="title-number">02</span> MEET YOUR CREW
+          </div>
+          <div className="page">
+            <div className="page-content">
               <div className="page-text">
                 <Routes>
                   <Route path="Commander" element={<Commander />} />
@@ -58,12 +58,12 @@ const Crew = () => {
                   <Route path="Engineer" element={<Engineer />} />
                   <Route path="/" element={<Commander />} />
                 </Routes>
-              </div>
-              <div>
-                <div className="crew-member img">
-                  <img src={imageSrc} alt="crew" />
+                <div className="crew-nav">
+                  <NavCrew />
                 </div>
-                <NavCrew />
+              </div>
+              <div className="crew-member">
+                <img src={imageSrc} alt="crew" className="crew-image" />
               </div>
             </div>
           </div>

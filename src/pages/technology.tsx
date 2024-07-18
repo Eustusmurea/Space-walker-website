@@ -37,25 +37,25 @@ const Technology = () => {
 
   return (
     <div className="technology-page">
-      <div className="content-container">
-        <div>
-          <h1 className="section-title">
+      <div className="page-display">
+        <div className="page-dims">
+          <div className="title title-text">
             <span className="title-number">03</span> SPACE LAUNCH 101
-          </h1>
-        </div>
-        <div className="numbered-section">
-          <NavTech />
-        </div>
-        <div className="content-container">
-          <Routes>
-            <Route path="Vehicle" element={<Vehicle />} />
-            <Route path="Spaceport" element={<Spaceport />} />
-            <Route path="Capsule" element={<Capsule />} />
-            <Route path="/" element={<Vehicle />} />
-          </Routes>
-        </div>
-        <div className="tech-image-container flex-1">
-          <img src={imageSrc} alt="destination" className="w-full h-auto" />
+          </div>
+          <div className="numbered-section">
+            <NavTech />
+          </div>
+          <div className="content-container">
+            <Routes>
+              <Route path="Vehicle" element={<Vehicle />} />
+              <Route path="Spaceport" element={<Spaceport />} />
+              <Route path="Capsule" element={<Capsule />} />
+              <Route path="/" element={<Vehicle />} />
+            </Routes>
+          </div>
+          <div className="tech-image-container flex-1">
+            <img src={imageSrc} alt="destination" className="w-full h-auto" />
+          </div>
         </div>
       </div>
     </div>
