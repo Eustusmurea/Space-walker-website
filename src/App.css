@@ -414,6 +414,9 @@ body {
   padding: 0px;
   width: 539px;
   height: 734px;
+  margin-left: 570.86px;
+  margin-top: -450px;
+  border-radius: 30%;
 }
 
 /* Typography */
@@ -464,12 +467,10 @@ body {
 .page-dims {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
   gap: 24px;
-  width: 1110px;
-  max-width: 1110px;
-  height: 792px;
+  width: 100%;
+  max-width: 1300px;
+  /* height: 792px; */
 }
 
 .title-text {
@@ -483,12 +484,8 @@ body {
 
 .page {
   display: flex;
-  flex-direction: row;
   align-items: center;
-  padding: 0px;
-  gap: 32px;
-  width: 1110px;
-  height: 734px;
+  justify-content: space-between;
 }
 
 .page-text {
@@ -499,4 +496,14 @@ body {
   gap: 40px;
   width: 539px;
   height: 734px;
+  margin-top: 181px;
+}
+
+.page-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+  padding: 2rem;
 }
