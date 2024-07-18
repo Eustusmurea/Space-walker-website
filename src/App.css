@@ -277,7 +277,8 @@ body {
   font-size: 28px;
   letter-spacing: 4.72px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: auto;
+  margin-top: 60px;
 }
 
 .title-number {
@@ -315,7 +316,9 @@ body {
 .crew-image-element {
   max-width: 400px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 10%;
+  margin-bottom: 300px;
+  margin-right: -60%;
 }
 
 .Explanation {

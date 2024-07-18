@@ -43,11 +43,11 @@ const Crew = () => {
 
   return (
     <div className="crew-body">
+      <div className="title">
+        <span className="title-number">02</span> MEET YOUR CREW
+      </div>
       <div className="page">
         <div>
-          <div className="title">
-            <span className="title-number">02</span> MEET YOUR CREW
-          </div>
           <div className="crew-content">
             <div className="explanation">
               <div className="crew-details">
