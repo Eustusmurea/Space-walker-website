@@ -5,7 +5,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @media screen {
 }
 body {
@@ -26,8 +25,6 @@ body {
 }
 
 .heading-xs {
-  width: 540px;
-  height: 165px;
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
@@ -67,14 +64,15 @@ body {
 }
 
 .hero {
+  margin-left: -60%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
   padding: 128px 0px;
   gap: 8px;
-  width: 1440px;
-  height: 888px;
+  /* width: 1440px;
+  height: 888px; */
   order: 1;
   flex-grow: 1;
 }
@@ -126,22 +124,14 @@ body {
   max-height: 600px;
   height: auto;
   margin-right: 70%;
-  margin-top: -60%;
+  margin-top: -30%;
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 300;
-  color: white;
   display: flex;
-  align-items: center;
-  gap: 1rem;
-  text-align: center;
-  justify-content: center;
-  font-family: "Barlow Condensed";
-  font-size: 28px;
-  margin-left: -90%;
-  margin-bottom: 100%;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
 }
 
 .title-number {
@@ -174,7 +164,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .secondary-nav .inactive {
@@ -197,24 +187,17 @@ body {
 .routes-container {
   width: 100%;
   text-align: center;
-  margin: -150% auto 0 auto;
+  margin: -130% auto 0 auto;
 }
 
 .planet-name {
   margin: 0;
-  font-family: "Bellefair";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 114px;
 }
 
 .description {
-  margin-top: 16px;
+  margin-top: 2px;
   color: #b0b0b0;
   margin-bottom: 40px;
-  font-family: "Barlow Regular";
-  font-style: normal;
-  font-size: 18px;
 }
 
 .stats {
@@ -231,17 +214,17 @@ body {
   font-family: "Barlow condensed Regular";
   margin-top: 1rem;
   font-size: 16px;
-  color: #7a7a7a;
-}
-
-.stat-value {
-  font-size: 28px;
-  font-family: "Bellefair Regular";
+  color: white;
 }
 
 .divider {
   border: 1px solid #b0b0b0;
   margin: 24px 0;
+}
+.divider1 {
+  stroke: #979797;
+  stroke-width: solid;
+  stroke-linejoin: miter;
 }
 
 /* CREW PAGE */
@@ -264,18 +247,14 @@ body {
   padding: 20px;
 }
 
-.page {
-  max-width: 1200px;
-  width: 100%;
-}
-
 .title {
   display: flex;
   align-items: center;
   font-size: 28px;
   letter-spacing: 4.72px;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: auto;
+  margin-top: 60px;
 }
 
 .title-number {
@@ -313,7 +292,9 @@ body {
 .crew-image-element {
   max-width: 400px;
   height: auto;
-  border-radius: 50%;
+  border-radius: 10%;
+  margin-bottom: 300px;
+  margin-right: -60%;
 }
 
 .Explanation {
@@ -426,9 +407,96 @@ body {
 }
 
 .crew-member img {
-  width: 50%;
-  max-width: 400px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 539px;
+  height: 734px;
+}
+
+/* Typography */
+
+.heading {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-weight: normal;
+}
+
+.heading-l {
+  font-family: "Bellefair";
+  font-size: 96px;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+.desktop-body {
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 180%;
+}
+.desktop-subheading-l {
+  font-family: "Bellefair";
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #ffffff;
+}
+.heading-m {
+  font-family: "Bellfair";
+  font-size: 56px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+.heading-n {
+  font-family: "Bellfair";
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: grey;
+}
+
+.page-dims {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+  width: 1110px;
+  max-width: 1110px;
+  height: 792px;
+}
+
+.title-text {
+  font-family: "Barlow condensed";
+  font-size: 28px;
+  font-weight: normal;
+  color: white;
+  line-height: auto;
+  letter-spacing: 4px;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  width: 1110px;
+  height: 734px;
+}
+
+.page-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  width: 539px;
+  height: 734px;
 }

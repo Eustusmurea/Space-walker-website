@@ -8,9 +8,11 @@
   justify-content: center;
   align-items: center;
   height: 10vh;
-  position: sticky;
+  position: relative;
   margin-top: 0;
   margin-bottom: 25%;
+  margin-left: 5%;
+  padding: 0;
 }
 
 .secondary-nav .inactive {
@@ -21,11 +23,12 @@
 
 .secondary-nav .inactive:hover {
   color: white;
-  border-bottom: 2px solid white;
+  border-bottom: 1px solid white;
 }
 
 .secondary-nav .active {
   color: white;
   border-bottom: 2px solid white;
   text-decoration: none;
+  padding: 0 0 0 0;
 }

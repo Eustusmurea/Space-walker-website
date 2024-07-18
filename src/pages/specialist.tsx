@@ -4,10 +4,10 @@ const Specialist = () => {
   return (
     <div>
       <div>
-        <h1>MISSION SPECIALIST</h1>
-        <p>MARK SHUTTLEWORTH</p>
+        <h1 className="heading-n">MISSION SPECIALIST</h1>
+        <p className="heading-m">MARK SHUTTLEWORTH</p>
       </div>
-      <div>
+      <div className="desktop-body">
         <p>
           Mark richard Shuttleworth is the founder and CEO of cannonical, the{" "}
           <br />

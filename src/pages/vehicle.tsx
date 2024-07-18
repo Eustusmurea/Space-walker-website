@@ -4,11 +4,11 @@ const Vehicle = () => {
   return (
     <div>
       <div>
-        <title className="subtitle"> THE TERMINOLOGY...</title>
+        <h1 className="heading-n">THE TERMINOLOGY...</h1>
+        <p className="heading-m">LAUNCH VEHICLE</p>
       </div>
       <div>
-        <p className="section-title">LAUNCH VEHICLE</p>
-        <p className="description">
+        <p className="desktop-body">
           A launch vehicle or a carrier rocket is a rocket propelled vehicle
           <br />
           used to carry a payload from Earth's surface to space, usually to

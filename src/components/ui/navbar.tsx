@@ -9,7 +9,11 @@ const Navbar = () => {
       <header className="header">
         <div>
           <img src={logo} alt="Logo"></img>
+          <div>
+            <hr className="divider1" />
+          </div>
         </div>
+        <hr className="divider1" />
 
         <nav className="nav">
           <ul className="navbar-list">
