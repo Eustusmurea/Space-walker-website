@@ -43,7 +43,7 @@ const Destination = () => {
 
   return (
     <div className="destination-page">
-      <div className="title">
+      <div className="title heading">
         <span className="title-number">03</span> DESTINATION
       </div>
       <div>

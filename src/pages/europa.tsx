@@ -4,9 +4,9 @@ import "../App.css";
 const Europa = () => {
   return (
     <div>
-      <div className="planet-content">
-        <h1 className="planet-name">EUROPA</h1>
-        <p className="description">
+      <div>
+        <h1 className="planet-name heading-l">EUROPA</h1>
+        <p className="description desktop-body">
           Europa is the smallest of the four Galilean moons orbiting Jupiter,{" "}
           <br />
           Europa is a winter lover's dream. With an icy surface its <br />
@@ -17,11 +17,11 @@ const Europa = () => {
         <div className="stats">
           <div className="stat-item">
             <h3 className="stat-title">AVG. DISTANCE</h3>
-            <p className="stat-value">628 MIL KM</p>
+            <p className="stat-value desktop-subheading-l">628 MIL KM</p>
           </div>
           <div className="stat-item">
             <h3 className="stat-title">EST. TRAVEL TIME</h3>
-            <p className="stat-value">3 YEARS</p>
+            <p className="stat-value desktop-subheading-l">3 YEARS</p>
           </div>
         </div>
       </div>

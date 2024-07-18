@@ -131,8 +131,6 @@ body {
 }
 
 .title {
-  font-size: 2rem;
-  font-weight: 300;
   color: white;
   display: flex;
   flex-direction: row;
@@ -140,8 +138,6 @@ body {
   gap: 1rem;
   text-align: center;
   justify-content: center;
-  font-family: "Barlow Condensed";
-  font-size: 28px;
   margin-left: -80%;
   margin-bottom: 90%;
 }
@@ -204,19 +200,12 @@ body {
 
 .planet-name {
   margin: 0;
-  font-family: "Bellefair";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 114px;
 }
 
 .description {
-  margin-top: 16px;
+  margin-top: 2px;
   color: #b0b0b0;
   margin-bottom: 40px;
-  font-family: "Barlow Regular";
-  font-style: normal;
-  font-size: 18px;
 }
 
 .stats {
@@ -233,17 +222,17 @@ body {
   font-family: "Barlow condensed Regular";
   margin-top: 1rem;
   font-size: 16px;
-  color: #7a7a7a;
-}
-
-.stat-value {
-  font-size: 28px;
-  font-family: "Bellefair Regular";
+  color: white;
 }
 
 .divider {
   border: 1px solid #b0b0b0;
   margin: 24px 0;
+}
+.divider1 {
+  stroke: #979797;
+  stroke-width: solid;
+  stroke-linejoin: miter;
 }
 
 /* CREW PAGE */
@@ -436,4 +425,35 @@ body {
   height: auto;
   border-radius: 50%;
   margin-bottom: 20px;
+}
+
+/* Typography */
+
+.heading {
+  font-family: "Barlow Condensed";
+  font-size: 28px;
+  letter-spacing: 4px;
+  font-weight: normal;
+}
+
+.heading-l {
+  font-family: "Bellefair";
+  font-size: 96px;
+  font-weight: normal;
+  letter-spacing: 0px;
+}
+.desktop-body {
+  font-family: "Barlow";
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: 180%;
+}
+.desktop-subheading-l {
+  font-family: "Bellefair";
+  font-size: 28px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  line-height: auto;
+  color: #ffffff;
 }
