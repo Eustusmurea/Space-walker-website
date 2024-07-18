@@ -3,12 +3,12 @@ import React from "react";
 const Pilot = () => {
   return (
     <div>
-      <div className="crew-member">
-        <h1 className="role">Pilot</h1>
-        <p className="name">VICTOR GLOVER</p>
+      <div>
+        <h1 className="heading-n">PILOT</h1>
+        <p className="heading-m">VICTOR GLOVER</p>
       </div>
       <div>
-        <p className="bio">
+        <p className="desktop-body">
           Pilot on the first operational flight of the SpaceX Crew Dragon to the{" "}
           <br />
           International Space Station. Glover is a commander in the U.S Navy
