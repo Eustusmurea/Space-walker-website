@@ -49,27 +49,23 @@ const Destination = () => {
             <span className="title-number">03</span> DESTINATION
           </div>
           <div className="page">
-            <div className="content-wrapper">
-              <div>
-                <div className="dest-img-container">
-                  <img src={imageSrc} alt="destination" className="dest-img" />
-                </div>
+            <div>
+              <div className="dest-img-container">
+                <img src={imageSrc} alt="destination" className="dest-img" />
               </div>
-              <div>
-                <nav className="secondary-nav">
-                  <NavDestination />
-                </nav>
-              </div>
-              <div>
-                <div className="routes-container">
-                  <Routes>
-                    <Route path="moon" element={<Moon />} />
-                    <Route path="mars" element={<Mars />} />
-                    <Route path="europa" element={<Europa />} />
-                    <Route path="titan" element={<Titan />} />
-                    <Route path="/" element={<Moon />} />
-                  </Routes>
-                </div>
+            </div>
+            <div className="routes-container">
+              <nav className="secondary-nav">
+                <NavDestination />
+              </nav>
+              <div className="route-content">
+                <Routes>
+                  <Route path="moon" element={<Moon />} />
+                  <Route path="mars" element={<Mars />} />
+                  <Route path="europa" element={<Europa />} />
+                  <Route path="titan" element={<Titan />} />
+                  <Route path="/" element={<Moon />} />
+                </Routes>
               </div>
             </div>
           </div>
