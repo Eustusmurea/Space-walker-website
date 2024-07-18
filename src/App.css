@@ -236,7 +236,6 @@ body {
   background-position: center;
   height: 100vh;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -248,18 +247,17 @@ body {
 }
 
 .title {
-  display: flex;
-  align-items: center;
-  font-size: 28px;
-  letter-spacing: 4.72px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2.7px;
+  color: #d0d6f9;
+  margin-bottom: 1rem;
   text-transform: uppercase;
-  margin-bottom: auto;
-  margin-top: 60px;
 }
 
 .title-number {
-  margin-right: 20px;
   font-weight: bold;
+  margin-right: 1rem;
 }
 
 .crew-content {
@@ -268,40 +266,23 @@ body {
   align-items: center;
 }
 
-.explanation {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.crew-details {
-  flex: 1;
-  min-width: 300px;
-}
-
-.crew-image {
+.crew-member {
   flex: 1;
   display: flex;
   justify-content: center;
   align-items: center;
-  min-width: 300px;
-  margin-bottom: 20px;
 }
 
-.crew-image-element {
+.crew-image {
+  width: 100%;
   max-width: 400px;
   height: auto;
-  border-radius: 10%;
-  margin-bottom: 300px;
-  margin-right: -60%;
 }
 
-.Explanation {
-  margin-top: 20px;
+.crew-nav {
+  margin-top: 2rem;
   display: flex;
   justify-content: center;
-  width: 100%;
 }
 
 .pagination {
@@ -406,19 +387,6 @@ body {
   color: rgb(255 255 255);
 }
 
-.crew-member img {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 539px;
-  height: 734px;
-  margin-left: 570.86px;
-  margin-top: -450px;
-  border-radius: 30%;
-}
-
 /* Typography */
 
 .heading {
@@ -489,14 +457,8 @@ body {
 }
 
 .page-text {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 40px;
-  width: 539px;
-  height: 734px;
-  margin-top: 181px;
+  flex: 1;
+  margin-right: 2rem;
 }
 
 .page-display {
@@ -506,4 +468,11 @@ body {
   gap: 8px;
   width: 100%;
   padding: 2rem;
+}
+
+.page-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
