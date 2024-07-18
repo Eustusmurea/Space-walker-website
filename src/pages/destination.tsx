@@ -43,29 +43,35 @@ const Destination = () => {
 
   return (
     <div className="destination-page">
-      <div className="title heading">
-        <span className="title-number">03</span> DESTINATION
-      </div>
-      <div>
-        <nav className="secondary-nav">
-          <NavDestination />
-        </nav>
-      </div>
-      <div className="content-wrapper">
-        <div>
-          <div className="dest-img-container">
-            <img src={imageSrc} alt="destination" className="dest-img" />
+      <div className="page-display">
+        <div className="page-dims">
+          <div className="title title-text">
+            <span className="title-number">03</span> DESTINATION
           </div>
-        </div>
-        <div>
-          <div className="routes-container">
-            <Routes>
-              <Route path="moon" element={<Moon />} />
-              <Route path="mars" element={<Mars />} />
-              <Route path="europa" element={<Europa />} />
-              <Route path="titan" element={<Titan />} />
-              <Route path="/" element={<Moon />} />
-            </Routes>
+          <div className="page">
+            <div className="content-wrapper">
+              <div>
+                <div className="dest-img-container">
+                  <img src={imageSrc} alt="destination" className="dest-img" />
+                </div>
+              </div>
+              <div>
+                <nav className="secondary-nav">
+                  <NavDestination />
+                </nav>
+              </div>
+              <div>
+                <div className="routes-container">
+                  <Routes>
+                    <Route path="moon" element={<Moon />} />
+                    <Route path="mars" element={<Mars />} />
+                    <Route path="europa" element={<Europa />} />
+                    <Route path="titan" element={<Titan />} />
+                    <Route path="/" element={<Moon />} />
+                  </Routes>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
