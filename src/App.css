@@ -260,12 +260,6 @@ body {
   margin-right: 1rem;
 }
 
-.crew-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 .crew-member {
   flex: 1;
   display: flex;
@@ -285,24 +279,30 @@ body {
   justify-content: center;
 }
 
-.pagination {
+.dot-nav {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+  align-items: center;
+  margin-top: 2rem;
+  margin-top: 150px;
 }
 
-.pagination button {
-  background: #ffffff;
-  border: none;
-  width: 10px;
-  height: 10px;
+.dot {
+  width: 15px;
+  height: 15px;
   border-radius: 50%;
+  background-color: #d0d6f9;
+  margin: 0 10px;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.pagination button.active {
-  background: #d0d6f9;
+.dot.active {
+  background-color: #ffffff;
+}
+
+.dot:hover {
+  background-color: #ffffff;
 }
 
 /* Technology page */
@@ -403,6 +403,7 @@ body {
   letter-spacing: 0px;
 }
 .desktop-body {
+  margin-top: 24px;
   font-family: "Barlow";
   font-size: 18px;
   font-weight: normal;
@@ -418,6 +419,7 @@ body {
   color: #ffffff;
 }
 .heading-m {
+  margin-top: 12px;
   font-family: "Bellfair";
   font-size: 56px;
   font-weight: normal;
@@ -457,6 +459,7 @@ body {
 }
 
 .page-text {
+  margin-top: 150px;
   flex: 1;
   margin-right: 2rem;
 }
