@@ -126,7 +126,7 @@ body {
   max-height: 600px;
   height: auto;
   margin-right: 70%;
-  margin-top: -60%;
+  margin-top: -30%;
 }
 
 .title {
@@ -134,14 +134,15 @@ body {
   font-weight: 300;
   color: white;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 1rem;
   text-align: center;
   justify-content: center;
   font-family: "Barlow Condensed";
   font-size: 28px;
-  margin-left: -90%;
-  margin-bottom: 100%;
+  margin-left: -80%;
+  margin-bottom: 90%;
 }
 
 .title-number {
@@ -174,7 +175,7 @@ body {
   display: flex;
   justify-content: center;
   width: 100%;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 
 .secondary-nav .inactive {
@@ -197,7 +198,7 @@ body {
 .routes-container {
   width: 100%;
   text-align: center;
-  margin: -150% auto 0 auto;
+  margin: -130% auto 0 auto;
 }
 
 .planet-name {
