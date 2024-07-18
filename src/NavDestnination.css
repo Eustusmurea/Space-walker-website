@@ -1,18 +1,18 @@
 .secondary-nav {
   display: flex;
-  gap: 32px;
-  color: #b0b0b0;
-  font-family: "Barlow condensed regular";
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 45%;
+  margin-bottom: 2rem;
+  font-family: "Barlow Condensed", sans-serif;
   font-size: 28px;
-  letter-spacing: 4px;
-  justify-content: center;
-  align-items: center;
-  height: 10vh;
-  position: relative;
-  margin-top: 0;
-  margin-bottom: 25%;
-  margin-left: 5%;
-  padding: 0;
+  color: #d0d6f9;
+  cursor: pointer;
+  padding: 0.5rem;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  flex-direction: row;
+  align-items: flex-start;
+  position: absolute;
 }
 
 .secondary-nav .inactive {
@@ -29,6 +29,4 @@
 .secondary-nav .active {
   color: white;
   border-bottom: 2px solid white;
-  text-decoration: none;
-  padding: 0 0 0 0;
 }

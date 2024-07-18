@@ -55,9 +55,11 @@ const Destination = () => {
               </div>
             </div>
             <div className="routes-container">
-              <nav className="secondary-nav">
-                <NavDestination />
-              </nav>
+              <div className="inline-div">
+                <nav className="secondary-nav">
+                  <NavDestination />
+                </nav>
+              </div>
               <div className="route-content">
                 <Routes>
                   <Route path="moon" element={<Moon />} />
