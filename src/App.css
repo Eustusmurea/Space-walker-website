@@ -261,7 +261,27 @@ body {
   justify-content: center;
   align-items: center;
 }
+.numbered-section {
+  margin-bottom: 20px;
+}
 
+.content-container {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 20px;
+}
+
+.tech-image-container {
+  width: 100%;
+  max-width: 600px;
+}
+
+.tech-image-container img {
+  width: 100%;
+  height: auto;
+}
+
+/* 
 .tech-nav {
   display: flex;
   justify-content: space-between;
@@ -291,15 +311,6 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-
-.numbered-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: calc(1rem /* 16px */ * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem /* 16px */ * var(--tw-space-y-reverse));
-}
-
 .number-button {
   display: flex;
   justify-content: center;

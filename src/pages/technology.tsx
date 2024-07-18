@@ -34,7 +34,6 @@ const Technology = () => {
     const currentPath = location.pathname.split("/")[2];
     loadImage(currentPath);
   }, [location]);
-
   return (
     <div className="technology-page">
       <div className="page-display">
@@ -45,7 +44,7 @@ const Technology = () => {
           <div className="numbered-section">
             <NavTech />
           </div>
-          <div className="content-container">
+          <div>
             <Routes>
               <Route path="Vehicle" element={<Vehicle />} />
               <Route path="Spaceport" element={<Spaceport />} />
@@ -53,8 +52,8 @@ const Technology = () => {
               <Route path="/" element={<Vehicle />} />
             </Routes>
           </div>
-          <div className="tech-image-container flex-1">
-            <img src={imageSrc} alt="destination" className="w-full h-auto" />
+          <div className="tech-image-container">
+            <img src={imageSrc} alt="technology" />
           </div>
         </div>
       </div>

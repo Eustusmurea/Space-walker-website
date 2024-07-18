@@ -46,7 +46,7 @@ const Destination = () => {
       <div className="page-display">
         <div className="page-dims">
           <div className="title title-text">
-            <span className="title-number">03</span> DESTINATION
+            <span className="title-number">01</span> DESTINATION
           </div>
           <div className="page">
             <div>
