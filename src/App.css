@@ -5,7 +5,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @media screen {
 }
 body {
@@ -26,8 +25,6 @@ body {
 }
 
 .heading-xs {
-  width: 540px;
-  height: 165px;
   font-family: "Bellefair";
   font-style: normal;
   font-weight: 400;
@@ -135,9 +132,6 @@ body {
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  gap: 24px;
-  width: 273px;
-  height: 34px;
 }
 
 .title-number {
@@ -251,11 +245,6 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 20px;
-}
-
-.page {
-  max-width: 1200px;
-  width: 100%;
 }
 
 .title {
@@ -418,15 +407,13 @@ body {
 }
 
 .crew-member img {
-  max-width: 400px;
-  height: auto;
-  border-radius: 50%;
-  margin-bottom: 20px;
-  width: 539.28px;
-  height: 676px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 539px;
+  height: 734px;
 }
 
 /* Typography */
@@ -483,4 +470,33 @@ body {
   width: 1110px;
   max-width: 1110px;
   height: 792px;
+}
+
+.title-text {
+  font-family: "Barlow condensed";
+  font-size: 28px;
+  font-weight: normal;
+  color: white;
+  line-height: auto;
+  letter-spacing: 4px;
+}
+
+.page {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 32px;
+  width: 1110px;
+  height: 734px;
+}
+
+.page-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 40px;
+  width: 539px;
+  height: 734px;
 }

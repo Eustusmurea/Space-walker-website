@@ -44,33 +44,26 @@ const Crew = () => {
   return (
     <div className="crew-body">
       <div className="page-dims">
-        <div className="title">
+        <div className="title title-text">
           <span className="title-number">02</span> MEET YOUR CREW
         </div>
         <div className="page">
           <div>
-            <div className="crew-content">
-              <div className="explanation">
-                <div className="crew-details">
-                  <Routes>
-                    <Route path="Commander" element={<Commander />} />
-                    <Route path="mark" element={<Specialist />} />
-                    <Route path="Pilot" element={<Pilot />} />
-                    <Route path="Engineer" element={<Engineer />} />
-                    <Route path="/" element={<Commander />} />
-                  </Routes>
+            <div className="explanation">
+              <div className="page-text">
+                <Routes>
+                  <Route path="Commander" element={<Commander />} />
+                  <Route path="mark" element={<Specialist />} />
+                  <Route path="Pilot" element={<Pilot />} />
+                  <Route path="Engineer" element={<Engineer />} />
+                  <Route path="/" element={<Commander />} />
+                </Routes>
+              </div>
+              <div>
+                <div className="crew-member img">
+                  <img src={imageSrc} alt="crew" />
                 </div>
-
-                <div className="crew-image">
-                  <img
-                    src={imageSrc}
-                    alt="crew"
-                    className="crew-image-element"
-                  />
-                </div>
-                <div className="Explanation">
-                  <NavCrew />
-                </div>
+                <NavCrew />
               </div>
             </div>
           </div>
