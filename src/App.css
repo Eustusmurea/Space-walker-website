@@ -378,27 +378,42 @@ body {
   width: 100%;
 }
 
-.heading-s {
-  width: 16px;
-  height: 37px;
-  font-family: "Bellefair";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 32px;
-  line-height: 37px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #0b0d17;
+.pagination-tech-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
 }
 
 .pagination-tech {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 32px;
-
+  justify-content: center;
+  align-items: center;
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  border: 2px solid #d0d6f9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination-tech.active {
+  background-color: white;
+}
+
+.pagination-tech.active-text {
+  color: #0b0d17;
+}
+
+.heading-s {
+  font-size: 18px;
+  color: #d0d6f9;
+}
+
+.pagination-tech:hover {
+  border-color: white;
+}
+
+.pagination-tech:hover .heading-s {
+  color: white;
 }

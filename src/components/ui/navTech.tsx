@@ -9,24 +9,20 @@ const NavTech = () => {
   const handleNavigation = (path: string) => {
     navigate(`/technology/${path}`);
   };
+
   return (
-    <div className="flex flex-col space-y-4">
+    <div className="pagination-tech-container">
       {Tech.map((tech, index) => (
         <div
           key={index}
-          className={`pagination-tech
-            ${
-              location.pathname.includes(tech)
-                ? "border-white bg-white text-dark-blue"
-                : "border-light-gray"
-            }`}
+          className={`pagination-tech ${
+            location.pathname.includes(tech) ? "active" : ""
+          }`}
           onClick={() => handleNavigation(tech)}
         >
           <span
             className={`heading-s ${
-              location.pathname.includes(tech)
-                ? "text-dark-blue"
-                : "text-light-gray"
+              location.pathname.includes(tech) ? "active-text" : ""
             }`}
           >
             {index + 1}
