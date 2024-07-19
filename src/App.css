@@ -64,17 +64,16 @@ body {
 }
 
 .hero {
-  margin-left: -60%;
+  margin-left: -20%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-end;
-  padding: 128px 0px;
   gap: 8px;
-  /* width: 1440px;
-  height: 888px; */
   order: 1;
   flex-grow: 1;
+  color: white;
+  text-align: left;
 }
 
 .destination-page {
@@ -105,21 +104,6 @@ body {
   margin-right: 80px;
 }
 
-.title {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-}
-
-.title-number {
-  font-family: "Barlow condensed";
-  font-weight: bold;
-  color: grey;
-  font-size: 28px;
-  margin-right: 10px;
-}
-
 .routes-container {
   flex: 1;
   display: block;
@@ -139,7 +123,7 @@ body {
 
 .description {
   margin-top: 2px;
-  color: #b0b0b0;
+  color: #add8e6;
   margin-bottom: 40px;
 }
 
@@ -196,11 +180,18 @@ body {
   color: #d0d6f9;
   margin-bottom: 1rem;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
 }
 
 .title-number {
+  font-family: "Barlow condensed";
   font-weight: bold;
-  margin-right: 1rem;
+  color: grey;
+  font-size: 28px;
+  margin-right: 10px;
 }
 
 .crew-member {
@@ -261,73 +252,36 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.tech-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 16px;
-}
-.tech-nav-item {
-  margin-left: 8px;
-  margin-right: 8px;
-  font-size: 16px;
-  line-height: 24px;
+.numbered-section {
+  margin-bottom: -5%;
+  margin-top: 20%;
 }
 
-.tech-nav-item-active {
-  margin-bottom: 2px;
-  border: #ffffff;
-}
-
-.content-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 32px;
+.tech-content {
+  width: 100%;
+  max-width: 600px;
+  margin-bottom: 100px;
+  margin-left: 10%;
+  margin-top: -20%;
 }
 
 .tech-image-container {
-  display: flex;
-  justify-content: flex-end;
-}
+  width: 100%;
+  max-width: 600px;
+  margin-top: 20px;
+  margin-left: 70%;
+  margin-top: -50%;
 
-.numbered-section {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  margin-top: calc(1rem /* 16px */ * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1rem /* 16px */ * var(--tw-space-y-reverse));
+  align-items: center;
+  padding: 0px;
 }
 
-.number-button {
-  display: flex;
-  justify-content: center;
-  border-width: 2px;
-  height: 48px;
-  width: 48px;
-  border-color: rgb(208 214 249);
-  border-radius: 9999px;
-}
-.number-button-active {
-  border-color: #ffffff;
-  background-color: #ffffff;
-  color: rgb(11 13 23);
-}
-
-.subtitle {
-  font-size: 24px;
-  line-height: 32px;
-  font-family: Bellefair, serif;
-  text-transform: uppercase;
-}
-
-.description {
-  color: rgb(208 214 249);
-}
-.body {
-  background-color: rgb(11 13 23);
-  color: rgb(255 255 255);
+.tech-image-container img {
+  width: 100%;
+  height: auto;
 }
 
 /* Typography */
@@ -383,7 +337,7 @@ body {
   gap: 24px;
   width: 100%;
   max-width: 1300px;
-  /* height: 792px; */
+  height: 680px;
 }
 
 .title-text {
@@ -421,4 +375,69 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+
+.pagination-tech-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.pagination-tech {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 2px solid #d0d6f9;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.pagination-tech.active {
+  background-color: white;
+}
+
+.pagination-tech.active-text {
+  color: #0b0d17;
+}
+
+.heading-s {
+  font-size: 32px;
+  color: #d0d6f9;
+  font-family: "Bellefair";
+}
+
+.pagination-tech:hover {
+  border-color: white;
+}
+
+.pagination-tech:hover .heading-s {
+  color: white;
+}
+
+.explore-button {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 272px;
+  height: 272px;
+  border-radius: 50%;
+  background-color: white;
+  color: #979797;
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.1);
 }

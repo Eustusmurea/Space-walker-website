@@ -1,7 +1,6 @@
 .secondary-nav {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
   width: 45%;
   margin-bottom: 2rem;
   font-family: "Barlow Condensed", sans-serif;
@@ -23,7 +22,7 @@
 
 .secondary-nav .inactive:hover {
   color: white;
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid grey;
 }
 
 .secondary-nav .active {

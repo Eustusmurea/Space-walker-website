@@ -5,33 +5,36 @@ import logo from "../../assets/shared/logo.svg";
 
 const Navbar = () => {
   return (
-    <div className="container1">
+    <div className="navbar-container">
       <header className="header">
-        <div>
-          <img src={logo} alt="Logo"></img>
-          <div>
-            <hr className="divider1" />
+        <div className="logo-container">
+          <img src={logo} alt="Logo" className="logo" />
+          <div className="divider-container">
+            <hr className="divider" />
           </div>
         </div>
-        <hr className="divider1" />
-
         <nav className="nav">
           <ul className="navbar-list">
             <li>
-              <Link to="/">00 Home</Link>
+              <Link to="/" className="navbar-link">
+                00 Home
+              </Link>
             </li>
             <li>
-              <Link to="/destination">01 Destination</Link>
+              <Link to="/destination" className="navbar-link">
+                01 Destination
+              </Link>
             </li>
             <li>
-              <Link to="/crew">02 Crew</Link>
+              <Link to="/crew" className="navbar-link">
+                02 Crew
+              </Link>
             </li>
             <li>
-              <Link to="/technology">03 Technology</Link>
+              <Link to="/technology" className="navbar-link">
+                03 Technology
+              </Link>
             </li>
-            {/* <li>
-              <Link to="/contacts">05 Contacts</Link>
-            </li> */}
           </ul>
         </nav>
       </header>
