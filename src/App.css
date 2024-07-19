@@ -105,21 +105,6 @@ body {
   margin-right: 80px;
 }
 
-.title {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-}
-
-.title-number {
-  font-family: "Barlow condensed";
-  font-weight: bold;
-  color: grey;
-  font-size: 28px;
-  margin-right: 10px;
-}
-
 .routes-container {
   flex: 1;
   display: block;
@@ -196,11 +181,18 @@ body {
   color: #d0d6f9;
   margin-bottom: 1rem;
   text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
 }
 
 .title-number {
+  font-family: "Barlow condensed";
   font-weight: bold;
-  margin-right: 1rem;
+  color: grey;
+  font-size: 28px;
+  margin-right: 10px;
 }
 
 .crew-member {
