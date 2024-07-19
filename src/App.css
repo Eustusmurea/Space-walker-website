@@ -261,7 +261,7 @@ body {
 .tech-content {
   width: 100%;
   max-width: 600px;
-  margin-bottom: 20px;
+  margin-bottom: 100px;
   margin-left: 10%;
   margin-top: -20%;
 }
@@ -270,8 +270,8 @@ body {
   width: 100%;
   max-width: 600px;
   margin-top: 20px;
-  margin-left: 60%;
-  margin-top: -40%;
+  margin-left: 70%;
+  margin-top: -50%;
 
   display: flex;
   flex-direction: row;
