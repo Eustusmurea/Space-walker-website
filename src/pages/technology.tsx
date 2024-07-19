@@ -38,8 +38,10 @@ const Technology = () => {
     <div className="technology-page">
       <div className="page-display">
         <div className="page-dims">
-          <div className="title title-text">
-            <span className="title-number">03</span> SPACE LAUNCH 101
+          <div>
+            <div className="title title-text">
+              <span className="title-number">03</span> SPACE LAUNCH 101
+            </div>
           </div>
           <div className="numbered-section">
             <NavTech />
