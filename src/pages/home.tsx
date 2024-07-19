@@ -20,8 +20,10 @@ const Home = () => {
               experience!
             </p>
           </div>
-          <div className="button-explore">
-            <Button />
+          <div>
+            <div className="explore-button">
+              <Button />
+            </div>
           </div>
         </div>
       </div>

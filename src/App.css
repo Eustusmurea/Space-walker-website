@@ -419,7 +419,7 @@ body {
   color: white;
 }
 
-.button-explore {
+/* .button-explore {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -433,4 +433,30 @@ body {
   background: #ffffff;
   border: 88px solid rgba(255, 255, 255, 0.1);
   border-radius: 999px;
+} */
+
+/* Add this CSS to your App.css or the relevant CSS file */
+
+.explore-button {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  width: 272px;
+  height: 272px;
+  border-radius: 50%;
+  background-color: white;
+  color: #979797;
+  font-size: 32px;
+  font-family: "Bellefair", serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.explore-button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 0 40px rgba(255, 255, 255, 0.1);
 }
