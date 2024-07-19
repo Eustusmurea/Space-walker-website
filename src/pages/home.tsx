@@ -19,9 +19,9 @@ const Home = () => {
               and relax because we'll give you a truly out of this world
               experience!
             </p>
-            <div className="button-explore">
-              <Button />
-            </div>
+          </div>
+          <div className="button-explore">
+            <Button />
           </div>
         </div>
       </div>
