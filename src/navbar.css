@@ -1,51 +1,77 @@
-.container1 {
-  width: 100%;
-  background-color: #1e1e1e;
-  padding: 10px 20px;
-  font-family: "barlow condensed";
-  margin-right: 64px;
+.navbar-container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+  gap: 48px;
+  position: absolute;
+  height: 136px;
+  width: 1440px;
+  top: 0;
+  z-index: 10;
 }
 
 .header {
   display: flex;
+  align-items: center;
+  width: 100%;
   justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
   align-items: center;
 }
 
 .logo {
-  font-size: 1.5rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 0px 0px 0px 64px;
-  gap: 64px;
-  width: 736px;
+  width: 48px;
   height: 48px;
 }
 
-.navbar-list {
-  list-style-type: none;
-  border-spacing: 48px;
-  margin: 0;
-  padding: 0;
+.divider-container {
   display: flex;
+  align-items: center;
+  margin-left: 20px;
+  order: 1;
+  flex-grow: 1;
 }
 
-.navbar-list li {
-  margin-right: 20px;
+.divider {
+  width: 1500px;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
 }
 
-.navbar-list li:last-child {
-  margin-right: 0;
+.nav {
+  background: rgba(255, 255, 255, 0.04);
+  padding: 0 40px;
+  backdrop-filter: blur(10px);
+  height: 96px;
 }
 
-.navbar-list li a {
-  font-family: "barlow condensed";
-  color: #fff;
+.navbar-list {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  width: 936px;
+}
+
+.navbar-link {
   text-decoration: none;
+  color: white;
+  font-family: "Barlow Condensed";
+  font-weight: bold;
   font-size: 20px;
+  letter-spacing: 2.7px;
+  transition: color 0.3s;
+  margin-right: 70px;
+  align-items: center;
 }
 
-.navbar-list li a:hover {
-  text-decoration: underline;
+.navbar-link:hover {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-link:active {
+  color: rgba(255, 255, 255, 0.5);
 }
