@@ -44,7 +44,7 @@ const Technology = () => {
           <div className="numbered-section">
             <NavTech />
           </div>
-          <div>
+          <div className="tech-content">
             <Routes>
               <Route path="Vehicle" element={<Vehicle />} />
               <Route path="Spaceport" element={<Spaceport />} />
