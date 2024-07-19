@@ -4,8 +4,8 @@ import Spaceport from "./spaceport";
 import Vehicle from "./vehicle";
 
 import vehicleImage from "./../assets/technology/image-launch-vehicle-portrait.jpg";
-import capsuleImage from "./../assets/technology/image-space-capsule-landscape.jpg";
-import spaceportImage from "./../assets/technology/image-spaceport-landscape.jpg";
+import capsuleImage from "./../assets/technology/image-space-capsule-portrait.jpg";
+import spaceportImage from "./../assets/technology/image-spaceport-portrait.jpg";
 import { Route, Routes, useLocation } from "react-router-dom";
 import NavTech from "../components/ui/navTech";
 import "./../App.css";

@@ -263,7 +263,7 @@ body {
   max-width: 600px;
   margin-bottom: 20px;
   margin-left: 10%;
-  margin-top: -10%;
+  margin-top: -20%;
 }
 
 .tech-image-container {
@@ -406,8 +406,9 @@ body {
 }
 
 .heading-s {
-  font-size: 18px;
+  font-size: 32px;
   color: #d0d6f9;
+  font-family: "Bellefair";
 }
 
 .pagination-tech:hover {
