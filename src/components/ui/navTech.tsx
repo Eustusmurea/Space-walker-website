@@ -14,7 +14,7 @@ const NavTech = () => {
       {Tech.map((tech, index) => (
         <div
           key={index}
-          className={`w-12 h-12 rounded-full border-2 flex items-center justify-center cursor-pointer
+          className={`pagination-tech
             ${
               location.pathname.includes(tech)
                 ? "border-white bg-white text-dark-blue"
@@ -23,7 +23,7 @@ const NavTech = () => {
           onClick={() => handleNavigation(tech)}
         >
           <span
-            className={`text-xl ${
+            className={`heading-s ${
               location.pathname.includes(tech)
                 ? "text-dark-blue"
                 : "text-light-gray"

@@ -3,7 +3,7 @@ import Capsule from "./capsule";
 import Spaceport from "./spaceport";
 import Vehicle from "./vehicle";
 
-import vehicleImage from "./../assets/technology/image-launch-vehicle-landscape.jpg";
+import vehicleImage from "./../assets/technology/image-launch-vehicle-portrait.jpg";
 import capsuleImage from "./../assets/technology/image-space-capsule-landscape.jpg";
 import spaceportImage from "./../assets/technology/image-spaceport-landscape.jpg";
 import { Route, Routes, useLocation } from "react-router-dom";
@@ -16,13 +16,13 @@ const Technology = () => {
 
   const loadImage = (section: string) => {
     switch (section) {
-      case "vehicle":
+      case "Vehicle":
         setImageSrc(vehicleImage);
         break;
-      case "spaceport":
+      case "Spaceport":
         setImageSrc(spaceportImage);
         break;
-      case "capsule":
+      case "Capsule":
         setImageSrc(capsuleImage);
         break;
       default:
