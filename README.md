@@ -1,30 +1,139 @@
-# React + TypeScript + Vite
+# Space Tourism Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the Space Tourism Website project! This project is built using React with Vite and styled using Tailwind CSS. The design is based on the Figma file attched from https://www.frontendmentor.io/.
+[Figma File:](https://www.figma.com/design/qQZOW6ZUMdgJrZsDJEMxQA/space-tourism-website)
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Introduction](#introduction)
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+  - [Running the Project](#running-the-project)
+- [Project Structure](#project-structure)
+- [Pages](#pages)
+  - [Home](#home)
+  - [Destination](#destination)
+  - [Crew](#crew)
+  - [Technology](#technology)
+- [Fonts](#fonts)
+- [Technologies Used](#technologies-used)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Expanding the ESLint configuration
+## Introduction
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+The Space Tourism Website is an interactive and visually appealing platform designed to provide information about space travel destinations, crew members, and technologies involved. The project aims to offer users an immersive experience as they explore different sections of the website.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- **Home Page**: Welcome page with a brief introduction and a call-to-action button.
+- **Destination Page**: Detailed information about different space destinations.
+- **Crew Page**: Profiles of crew members involved in space travel.
+- **Technology Page**: Insights into the technologies used in space exploration.
+
+## Getting Started
+
+Follow these instructions to get a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. **Clone the repository:**
+
+   ```bash
+   git clone https://github.com/Eustusmurea/Space-walker-website.git
+   cd space-Space-walker-website
+   ```
+
+2. **Install dependencies:**
+
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+### Running the Project
+
+1. **Start the development server:**
+
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+2. **Open your browser and visit:**
+
+   ```text
+   http://localhost:5173
+   ```
+
+## Project Structure
+
+```text
+Space-walker-website/
+├── public/
+│   ├── assets/
+│   └── index.html
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── pages/
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   └── main.tsx
+│   └──  index.html
+├── .gitignore
+├── package.json
+├── README.md
+└── tailwind.config.js
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Pages
+
+### Home
+
+The home page serves as the landing page with a welcome message and a prominent call-to-action button.
+
+### Destination
+
+This page provides detailed information about various space destinations including the Moon, Mars, Europa, and Titan.
+
+### Crew
+
+Profiles of the crew members involved in space travel are showcased here, including their roles and biographies.
+
+### Technology
+
+Insights into the technologies used in space exploration, divided into sections like Vehicle, Spaceport, and Capsule.
+
+## Fonts
+
+The project uses the following Google Fonts:
+
+- **Bellefair**
+- **Barlow Condensed**
+- **Barlow**
+
+## Technologies Used
+
+- **React**: JavaScript library for building user interfaces.
+- **Vite**: Next-generation front-end tool for faster builds.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **React Router**: For handling routing within the application.
+
+## Contributing
+
+Contributions are welcome! Please fork the repository and create a pull request with your changes. Ensure your code adheres to the project's coding standards and conventions.
+
+## License
+
+This project is licensed under the MIT License
