@@ -36,7 +36,7 @@
   flex-grow: 1;
 }
 
-.divider {
+.divider-nav {
   width: 1500px;
   height: 1px;
   background-color: rgba(255, 255, 255, 0.25);
