@@ -8,6 +8,7 @@ import capsuleImage from "./../assets/technology/image-space-capsule-landscape.j
 import spaceportImage from "./../assets/technology/image-spaceport-landscape.jpg";
 import { Route, Routes, useLocation } from "react-router-dom";
 import NavTech from "../components/ui/navTech";
+import "./../App.css";
 
 const Technology = () => {
   const [imageSrc, setImageSrc] = useState(vehicleImage);
@@ -34,14 +35,13 @@ const Technology = () => {
     const currentPath = location.pathname.split("/")[2];
     loadImage(currentPath);
   }, [location]);
+
   return (
     <div className="technology-page">
       <div className="page-display">
         <div className="page-dims">
-          <div>
-            <div className="title title-text">
-              <span className="title-number">03</span> SPACE LAUNCH 101
-            </div>
+          <div className="title title-text">
+            <span className="title-number">03</span> SPACE LAUNCH 101
           </div>
           <div className="numbered-section">
             <NavTech />
