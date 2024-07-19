@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import "../../navbar.css";
 import logo from "../../assets/shared/logo.svg";
@@ -10,7 +9,7 @@ const Navbar = () => {
         <div className="logo-container">
           <img src={logo} alt="Logo" className="logo" />
           <div className="divider-container">
-            <hr className="divider" />
+            <hr className="divider-nav" />
           </div>
         </div>
         <nav className="nav">

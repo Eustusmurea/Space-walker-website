@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Capsule from "./capsule";
 import Spaceport from "./spaceport";
 import Vehicle from "./vehicle";
