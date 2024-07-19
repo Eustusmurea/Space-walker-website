@@ -19,7 +19,7 @@ const Home = () => {
               and relax because we'll give you a truly out of this world
               experience!
             </p>
-            <div>
+            <div className="button-explore">
               <Button />
             </div>
           </div>

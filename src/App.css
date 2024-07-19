@@ -124,7 +124,7 @@ body {
 
 .description {
   margin-top: 2px;
-  color: #b0b0b0;
+  color: #add8e6;
   margin-bottom: 40px;
 }
 
@@ -417,4 +417,18 @@ body {
 
 .pagination-tech:hover .heading-s {
   color: white;
+}
+
+.button-explore {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  gap: 8px;
+  width: 272px;
+  height: 272px;
+  background: #ffffff;
+  border: 88px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
 }
