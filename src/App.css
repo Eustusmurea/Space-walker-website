@@ -24,6 +24,15 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  /* @screen md {
+    padding: 1rem;
+  }
+  @screen lg {
+    padding: 2rem;
+  }
+  @screen xl {
+    padding: 4rem;
+  } */
 }
 
 /* Text styles */
