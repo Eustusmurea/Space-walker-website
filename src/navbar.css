@@ -6,9 +6,10 @@
   gap: 48px;
   position: absolute;
   height: 136px;
-  width: 1440px;
+  width: 100%; /* Change from fixed width to 100% */
   top: 0;
   z-index: 10;
+  padding: 0 20px; /* Add padding for better spacing */
 }
 
 .header {
@@ -38,9 +39,9 @@
 }
 
 .divider-nav {
-  width: 1500px;
+  width: 100%; /* Adjust to be flexible */
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: gray;
 }
 
 .nav {
@@ -54,7 +55,8 @@
   display: flex;
   list-style: none;
   gap: 32px;
-  width: 936px;
+  flex-wrap: wrap; /* Allow wrapping */
+  width: 100%; /* Adjust to be flexible */
 }
 
 .navbar-link {
@@ -75,4 +77,68 @@
 
 .navbar-link:active {
   color: rgba(255, 255, 255, 0.5);
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .navbar-container {
+    gap: 24px; /* Reduce gap */
+  }
+
+  .navbar-link {
+    margin-right: 50px; /* Reduce margin */
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar-container {
+    flex-direction: column; /* Stack elements vertically */
+    align-items: flex-start;
+    padding: 0 10px;
+    height: auto; /* Adjust height */
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar-list {
+    flex-direction: column;
+    gap: 16px; /* Reduce gap */
+  }
+
+  .navbar-link {
+    margin-right: 0; /* Remove right margin */
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-container {
+    gap: 16px; /* Further reduce gap */
+  }
+
+  .logo {
+    width: 40px; /* Reduce logo size */
+    height: 40px;
+  }
+
+  .navbar-link {
+    font-size: 18px; /* Reduce font size */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar-container {
+    padding: 0 5px; /* Further reduce padding */
+  }
+
+  .navbar-list {
+    align-items: flex-start;
+  }
+
+  .navbar-link {
+    font-size: 16px; /* Further reduce font size */
+    letter-spacing: 1.5px; /* Adjust letter spacing */
+  }
 }
